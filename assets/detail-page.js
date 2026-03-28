@@ -153,13 +153,13 @@
     if (explicitFrames.length) {
       const padded = explicitFrames.slice(0, 3);
       while (padded.length < 3) {
-        const title = padded.length === 1 ? "场景参考（待补）" : "成果参考（待补）";
+        const title = padded.length === 1 ? "应用场景" : "成果参考";
         padded.push({
           src: VISUAL_PLACEHOLDER,
           alt: title,
-          caption: title,
+          caption: "资料补充中",
           title,
-          description: "该位置后续补充更合适的外宣配图。"
+          description: ""
         });
       }
       return padded;
@@ -209,15 +209,15 @@
     const slots = [
       {
         title: "项目海报",
-        description: "这一张用于首页、详情页和线下外宣场景，优先展示项目整体风格。"
+        description: ""
       },
       {
-        title: "场景参考",
-        description: "建议放应用场景、官方案例或产品参考图，帮助家长快速理解“这是做什么的”。"
+        title: "应用场景",
+        description: ""
       },
       {
         title: "成果参考",
-        description: "建议放成果效果、交互界面或产品细节参考图，帮助家长理解最后会做成什么样。"
+        description: ""
       }
     ];
 
@@ -228,10 +228,10 @@
       } else {
         finalFrames.push({
           src: VISUAL_PLACEHOLDER,
-          alt: `${slots[index].title}（待补）`,
-          caption: `${slots[index].title}（待补）`,
-          title: `${slots[index].title}（待补）`,
-          description: slots[index].description
+          alt: slots[index].title,
+          caption: "资料补充中",
+          title: slots[index].title,
+          description: ""
         });
       }
     }
@@ -473,8 +473,8 @@
       <section class="visual-framework-section">
         <div class="rich-section__head">
           <p class="eyebrow eyebrow--dark">Visual Framework</p>
-          <h2>项目视觉材料</h2>
-          <p>详情页统一固定三张图：项目海报、场景参考、成果参考。后续补素材时，只需要替换这三个位置。</p>
+          <h2>项目图集</h2>
+          <p>通过海报、应用场景和成果参考，更直观看懂这个项目。</p>
         </div>
         <div class="visual-framework-grid">
           ${frames
@@ -483,7 +483,6 @@
                 <figure class="visual-framework-card">
                   <div class="visual-framework-card__meta">
                     <span>${item.title}</span>
-                    ${item.description ? `<p>${item.description}</p>` : ""}
                   </div>
                   <button
                     class="visual-framework-card__button zoomable-media"
