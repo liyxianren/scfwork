@@ -190,6 +190,54 @@
     ];
   }
 
+  setVisualFrames("tongue-diagnosis-ai", [
+    {
+      src: "assets/project-media/tongue-diagnosis-ai/poster.jpg",
+      alt: "舌像检测 项目海报",
+      title: "项目海报",
+      caption: "舌像检测 项目海报",
+      description: "项目海报先说明这是 AI 视觉与生物医学结合的项目。"
+    },
+    {
+      src: "assets/project-media/tongue-diagnosis-ai/scene-reference.png",
+      alt: "舌像采集场景参考图",
+      title: "场景参考",
+      caption: "舌像采集与检测场景参考",
+      description: "用于解释真实采集与检测场景，让家长先看懂项目在做什么。"
+    },
+    {
+      src: "assets/project-media/tongue-diagnosis-ai/outcome-reference.png",
+      alt: "舌像特征分割成果参考图",
+      title: "成果参考",
+      caption: "舌像特征识别成果参考",
+      description: "用于说明视觉模型最后能做出什么样的识别与分析结果。"
+    }
+  ]);
+
+  setVisualFrames("gut-acoustic-ai", [
+    {
+      src: "assets/project-media/gut-acoustic-ai/poster.jpg",
+      alt: "肠道声学信号 项目海报",
+      title: "项目海报",
+      caption: "肠道声学信号 项目海报",
+      description: "项目海报先交代这是 AI 声学与生物医学方向的项目。"
+    },
+    {
+      src: "assets/project-media/gut-acoustic-ai/scene-reference.png",
+      alt: "肠音采集场景参考图",
+      title: "场景参考",
+      caption: "腹部听诊与采集场景参考",
+      description: "先让家长理解这个项目对应的是怎样的真实采集和医学观察场景。"
+    },
+    {
+      src: "assets/project-media/gut-acoustic-ai/outcome-reference.png",
+      alt: "肠道声学信号分析成果参考图",
+      title: "成果参考",
+      caption: "肠音信号分析成果参考",
+      description: "这一张用于解释信号采集后能做出的分析结果，更适合网页内查看和放大。"
+    }
+  ]);
+
   const walker = window.PROJECT_DETAIL_CONTENT["smart-pet-walker"] && window.PROJECT_DETAIL_CONTENT["smart-pet-walker"].detailPage;
   if (walker) {
     setVisualFrames("smart-pet-walker", [
@@ -223,6 +271,30 @@
     ];
   }
 
+  setVisualFrames("memory-guardian", [
+    {
+      src: "assets/project-media/memory-guardian/poster.jpg",
+      alt: "记忆守护者 项目海报",
+      title: "项目海报",
+      caption: "记忆守护者 项目海报",
+      description: "项目海报先说明这是适老化与健康辅助方向的主题。"
+    },
+    {
+      src: "assets/project-media/memory-guardian/scene-reference.jpg",
+      alt: "适老化陪伴与认知支持场景参考图",
+      title: "场景参考",
+      caption: "适老化陪伴与认知支持场景参考",
+      description: "用于说明项目对应的是怎样的老人关怀和认知支持场景。"
+    },
+    {
+      src: "assets/project-media/memory-guardian/outcome-reference.jpg",
+      alt: "健康提醒设备成果参考图",
+      title: "成果参考",
+      caption: "健康提醒类成果参考",
+      description: "用于帮助家长理解这个项目最后会偏向怎样的辅助设备与产品形态。"
+    }
+  ]);
+
   const desktopPet = window.PROJECT_DETAIL_CONTENT["desktop-pet"] && window.PROJECT_DETAIL_CONTENT["desktop-pet"].detailPage;
   if (desktopPet) {
     setVisualFrames("desktop-pet", [
@@ -255,6 +327,78 @@
       ...(desktopPet.gallery || [])
     ];
   }
+
+  setVisualFrames("parkinson-band", [
+    {
+      src: "assets/project-media/parkinson-band/poster.jpg",
+      alt: "帕金森手环 项目海报",
+      title: "项目海报",
+      caption: "帕金森手环 项目海报",
+      description: "项目海报先说明这是电子工程与生物医学结合的可穿戴方向项目。"
+    },
+    {
+      src: "assets/project-media/parkinson-band/scene-reference.png",
+      alt: "帕金森可穿戴监测场景参考图",
+      title: "场景参考",
+      caption: "可穿戴监测场景参考",
+      description: "用于解释真实佩戴方式和可穿戴监测逻辑，让项目方向一眼可理解。"
+    },
+    {
+      src: "assets/project-media/parkinson-band/outcome-reference.png",
+      alt: "帕金森监测数据成果参考图",
+      title: "成果参考",
+      caption: "监测数据成果参考",
+      description: "用于说明传感器采集后可以形成怎样的数据分析和观察结果。"
+    }
+  ]);
+
+  setVisualFrames("upper-limb-exoskeleton", [
+    {
+      src: "assets/project-media/upper-limb-exoskeleton/poster.jpg",
+      alt: "上肢外骨骼 项目海报",
+      title: "项目海报",
+      caption: "上肢外骨骼 项目海报",
+      description: "项目海报先建立机械电子与生物医学结合的项目印象。"
+    },
+    {
+      src: "assets/project-media/upper-limb-exoskeleton/scene-reference.jpg",
+      alt: "上肢康复与辅助治疗场景参考图",
+      title: "场景参考",
+      caption: "上肢康复场景参考",
+      description: "用于帮助家长理解外骨骼项目对应的康复训练和辅助治疗场景。"
+    },
+    {
+      src: "assets/project-media/upper-limb-exoskeleton/outcome-reference.webp",
+      alt: "上肢外骨骼成果形态参考图",
+      title: "成果参考",
+      caption: "上肢外骨骼成果形态参考",
+      description: "用于说明这一方向最终能做出怎样的设备形态和产品表达。"
+    }
+  ]);
+
+  setVisualFrames("micro-wind-power", [
+    {
+      src: "assets/project-media/micro-wind-power/poster.jpg",
+      alt: "微风发电 项目海报",
+      title: "项目海报",
+      caption: "微风发电 项目海报",
+      description: "项目海报先说明这是能源与环境方向的工程实践项目。"
+    },
+    {
+      src: "assets/project-media/micro-wind-power/scene-reference.jpg",
+      alt: "风力发电场景参考图",
+      title: "场景参考",
+      caption: "风力发电场景参考",
+      description: "用于解释微型风能装置背后的真实应用场景和风能概念。"
+    },
+    {
+      src: "assets/project-media/micro-wind-power/outcome-reference.jpg",
+      alt: "风机发电成果参考图",
+      title: "成果参考",
+      caption: "风能装置成果参考",
+      description: "用于帮助家长理解这个项目最后更偏向怎样的装置效果和成果展示。"
+    }
+  ]);
 
   const aiVisionEye = window.PROJECT_DETAIL_CONTENT["ai-vision-eye"] && window.PROJECT_DETAIL_CONTENT["ai-vision-eye"].detailPage;
   if (aiVisionEye) {
