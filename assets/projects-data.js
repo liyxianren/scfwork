@@ -755,6 +755,14 @@ const PROJECT_SCHEDULES = {
     { label: "一期", date: "6月15日-6月19日" },
     { label: "二期", date: "6月29日-7月3日" }
   ],
+  "ai-future-player-starter": [
+    { label: "一期", date: "6月15日-6月19日" },
+    { label: "二期", date: "6月29日-7月3日" }
+  ],
+  "single-leg-exoskeleton": [
+    { label: "一期", date: "6月15日-6月19日" },
+    { label: "二期", date: "6月29日-7月3日" }
+  ],
   "global-interstellar-routing": [
     { label: "一期", date: "6月15日-6月19日" },
     { label: "二期", date: "6月29日-7月3日" }
@@ -766,6 +774,42 @@ const PROJECT_SCHEDULES = {
 };
 
 const UPCOMING_PLACEHOLDER_PROJECTS = [
+  {
+    slug: "ai-future-player-starter",
+    name: "AI未来玩家启蒙计划",
+    type: "纯软",
+    category: "AI编程",
+    subjects: ["计算机", "人工智能", "教育学", "应用数学"],
+    grade: "5-8",
+    direction: "AI工具使用趣味",
+    seats: 5,
+    days: 5,
+    requirement: "零基础可参加，适合对 AI 工具和创意表达感兴趣的学生",
+    status: "资料整理中",
+    summary: "面向低年级学生的 AI 工具启蒙项目，先以占位形式加入项目池，便于统一展示排期与入口。",
+    intro: "该项目计划纳入暑期项目站，当前先保留项目名称、适合年级、方向和开课批次，后续再补充正式计划书与课程介绍。",
+    focus: ["AI工具基础认知", "趣味项目表达", "低门槛创意应用体验"],
+    outcomes: ["后续补充正式项目计划书", "预留网站占位入口", "统一展示项目池时间安排"],
+    planPath: null
+  },
+  {
+    slug: "single-leg-exoskeleton",
+    name: "单腿机械外骨骼",
+    type: "软硬",
+    category: "智能辅助与健康",
+    subjects: ["机械工程", "电子工程", "生物医学", "计算机"],
+    grade: "9-11",
+    direction: "机械电子生物医学",
+    seats: 4,
+    days: 5,
+    requirement: "建议对机械结构、助力控制和生物医学方向感兴趣",
+    status: "资料整理中",
+    summary: "面向机械电子与生物医学方向的外骨骼主题项目，当前先以占位页形式加入网站。",
+    intro: "该项目计划后续纳入暑期项目池，当前先保留基础信息和开课时间，详细课程内容与正式计划书会在后续补齐。",
+    focus: ["机械助力结构理解", "外骨骼控制表达", "健康辅助设备场景认知"],
+    outcomes: ["后续补充正式项目计划书", "预留网站占位入口", "统一展示项目池时间安排"],
+    planPath: null
+  },
   {
     slug: "global-interstellar-routing",
     name: "全球星间路由优化系统",
