@@ -165,14 +165,21 @@
         alt: "情绪早期干预系统 项目海报",
         title: "项目海报",
         caption: "情绪早期干预系统 项目海报",
-        description: "项目海报用于先说明这是一个偏心理与 AI 结合的主题。"
+        description: "项目海报先说明这是心理健康与 AI 结合的主题。"
       },
       {
-        src: "assets/project-media/emotion-early-intervention/who-mental-health-crop.png",
-        alt: "WHO 青少年心理健康页面截图",
+        src: "assets/project-media/emotion-early-intervention/scene-reference.jpg",
+        alt: "青少年心理支持与陪伴场景参考图",
         title: "场景参考",
-        caption: "WHO 青少年心理健康场景参考",
-        description: "这类图片更适合放在价值和场景位，帮助家长理解项目为什么值得做。"
+        caption: "青少年心理支持场景参考",
+        description: "用于说明项目对应的真实陪伴和支持场景。"
+      },
+      {
+        src: "assets/project-media/emotion-early-intervention/outcome-reference.jpg",
+        alt: "情绪识别界面成果参考图",
+        title: "成果参考",
+        caption: "情绪识别界面成果参考",
+        description: "用于说明最后能做出的结果界面和反馈形态。"
       }
     ]);
     emotion.gallery = [
@@ -180,11 +187,6 @@
         src: "assets/project-media/emotion-early-intervention/poster.jpg",
         alt: "情绪早期干预系统 项目海报",
         caption: "情绪早期干预系统 项目海报"
-      },
-      {
-        src: "assets/project-media/emotion-early-intervention/who-mental-health-crop.png",
-        alt: "WHO 青少年心理健康页面截图",
-        caption: "WHO 青少年心理健康页面截图"
       },
       ...(emotion.gallery || [])
     ];
@@ -249,11 +251,18 @@
         description: "项目海报先说明这是一个四足机器人方向的暑期项目。"
       },
       {
-        src: "assets/project-media/smart-pet-walker/petoi-bittle-crop.png",
-        alt: "Petoi Bittle 官方产品页截图",
+        src: "assets/project-media/smart-pet-walker/scene-reference.jpg",
+        alt: "四足机器人训练与展示场景参考图",
         title: "场景参考",
-        caption: "四足机器人产品参考",
-        description: "这类参考图适合放在中间，帮助家长理解四足机器人做出来会是什么感觉。"
+        caption: "四足机器人场景参考",
+        description: "用于说明四足机器人训练与展示场景。"
+      },
+      {
+        src: "assets/project-media/smart-pet-walker/outcome-reference.jpg",
+        alt: "四足机器人成果参考图",
+        title: "成果参考",
+        caption: "四足机器人成果参考",
+        description: "用于说明项目最后会做出怎样的机器人效果。"
       }
     ]);
     walker.gallery = [
@@ -400,6 +409,78 @@
     }
   ]);
 
+  setVisualFrames("shade-cloud", [
+    {
+      src: "assets/project-media/shade-cloud/poster.jpg",
+      alt: "遮阳云朵 项目海报",
+      title: "项目海报",
+      caption: "遮阳云朵 项目海报",
+      description: "项目海报先说明这是一个创意遮阳与跟随装置项目。"
+    },
+    {
+      src: "assets/project-media/shade-cloud/scene-reference.jpg",
+      alt: "遮阳装置场景参考图",
+      title: "场景参考",
+      caption: "遮阳装置场景参考",
+      description: "用于说明这个装置在户外移动场景里的使用方式。"
+    },
+    {
+      src: "assets/project-media/shade-cloud/outcome-reference.jpg",
+      alt: "遮阳云朵成果参考图",
+      title: "成果参考",
+      caption: "遮阳云朵成果参考",
+      description: "用于说明项目最终呈现出来的装置形态。"
+    }
+  ]);
+
+  setVisualFrames("humanoid-robot", [
+    {
+      src: "assets/project-media/humanoid-robot/poster.jpg",
+      alt: "人型机器人 项目海报",
+      title: "项目海报",
+      caption: "人型机器人 项目海报",
+      description: "项目海报先建立人型机器人方向的整体印象。"
+    },
+    {
+      src: "assets/project-media/humanoid-robot/scene-reference.jpg",
+      alt: "人型机器人展示与训练场景参考图",
+      title: "场景参考",
+      caption: "人型机器人训练与展示场景参考",
+      description: "用于说明这个项目对应的训练、展示与交互场景。"
+    },
+    {
+      src: "assets/project-media/humanoid-robot/outcome-reference.jpg",
+      alt: "人型机器人成果参考图",
+      title: "成果参考",
+      caption: "人型机器人成果参考",
+      description: "用于帮助家长理解最终会做出怎样的人型机器人效果。"
+    }
+  ]);
+
+  setVisualFrames("smart-planter", [
+    {
+      src: "assets/project-media/smart-planter/poster.jpg",
+      alt: "智能花盆 项目海报",
+      title: "项目海报",
+      caption: "智能花盆 项目海报",
+      description: "项目海报先说明这是植物监测与家用智能硬件方向。"
+    },
+    {
+      src: "assets/project-media/smart-planter/scene-reference.jpg",
+      alt: "植物监测场景参考图",
+      title: "场景参考",
+      caption: "植物养护场景参考",
+      description: "用于说明真实家庭或教室里的植物养护场景。"
+    },
+    {
+      src: "assets/project-media/smart-planter/outcome-reference.jpg",
+      alt: "智能花盆成果参考图",
+      title: "成果参考",
+      caption: "智能花盆成果参考",
+      description: "用于说明项目最后会做成怎样的智能养护设备。"
+    }
+  ]);
+
   const aiVisionEye = window.PROJECT_DETAIL_CONTENT["ai-vision-eye"] && window.PROJECT_DETAIL_CONTENT["ai-vision-eye"].detailPage;
   if (aiVisionEye) {
     setVisualFrames("ai-vision-eye", [
@@ -408,14 +489,21 @@
         alt: "AI智眼 项目海报",
         title: "项目海报",
         caption: "AI智眼 项目海报",
-        description: "海报先说明项目定位和无障碍主题。"
+        description: "海报先说明这是面向视障辅助的 AI 方向。"
       },
       {
-        src: "assets/project-media/ai-vision-eye/seeing-ai-crop.png",
-        alt: "Microsoft Seeing AI 页面截图",
+        src: "assets/project-media/ai-vision-eye/scene-reference.jpg",
+        alt: "无障碍辅助场景参考图",
         title: "场景参考",
-        caption: "无障碍辅助产品参考",
-        description: "这类图更适合帮助家长理解 AI 与弱势群体场景结合的价值。"
+        caption: "无障碍辅助场景参考",
+        description: "用于说明项目对应的视障辅助和环境识别场景。"
+      },
+      {
+        src: "assets/project-media/ai-vision-eye/outcome-reference.jpg",
+        alt: "无障碍视觉理解成果参考图",
+        title: "成果参考",
+        caption: "无障碍视觉理解成果参考",
+        description: "用于说明最后会做出的语音反馈和视觉理解成果。"
       }
     ]);
     aiVisionEye.gallery = [
