@@ -65,6 +65,41 @@
     `;
   }
 
+  function renderSessionStrip() {
+    if (!project.sessions || !project.sessions.length) return "";
+    return `
+      <div class="detail-session-strip">
+        <span class="detail-session-strip__label">开课时间</span>
+        <div class="detail-session-strip__list">
+          ${project.sessions
+            .map(
+              (item) => `
+                <div class="detail-session-card">
+                  <em>${item.label}</em>
+                  <strong>${item.date}</strong>
+                </div>
+              `
+            )
+            .join("")}
+        </div>
+      </div>
+    `;
+  }
+
+  function renderSessionMetaItems() {
+    if (!project.sessions || !project.sessions.length) return "";
+    return project.sessions
+      .map(
+        (item) => `
+          <div class="meta-item">
+            <div class="meta-label">${item.label}</div>
+            <div class="meta-value">${item.date}</div>
+          </div>
+        `
+      )
+      .join("");
+  }
+
   const relatedHtml = relatedProjects.length
     ? relatedProjects
         .map(
@@ -461,6 +496,7 @@
               ${downloadButton()}
               <a class="btn btn-secondary" href="../index.html">继续看其他项目</a>
             </div>
+            ${renderSessionStrip()}
           </div>
           <aside class="detail-visual">
             ${renderHeroMedia(detailPage)}
@@ -510,6 +546,7 @@
                   <div class="meta-label">天数</div>
                   <div class="meta-value">${project.days} 天</div>
                 </div>
+                ${renderSessionMetaItems()}
                 <div class="meta-item">
                   <div class="meta-label">基础要求</div>
                   <div class="meta-value">${project.requirement}</div>
@@ -624,6 +661,7 @@
             ${downloadButton()}
             <a class="btn btn-secondary" href="../index.html">继续看其他项目</a>
           </div>
+          ${renderSessionStrip()}
         </div>
         <aside class="detail-side">
           <div class="detail-card">
@@ -681,6 +719,7 @@
                 <div class="meta-label">天数</div>
                 <div class="meta-value">${project.days} 天</div>
               </div>
+              ${renderSessionMetaItems()}
               <div class="meta-item">
                 <div class="meta-label">基础要求</div>
                 <div class="meta-value">${project.requirement}</div>

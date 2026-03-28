@@ -11,6 +11,7 @@
     "计算机",
     "人工智能",
     "机械工程",
+    "航空航天工程",
     "电子工程",
     "电子信息",
     "生物医学",
@@ -20,7 +21,9 @@
     "应用物理",
     "教育学",
     "通信工程",
+    "运筹学",
     "电气工程",
+    "经济/金融/商业",
     "环境/环保/生态",
     "生物/化学"
   ];
@@ -69,6 +72,27 @@
     return `<a class="btn btn-outline" href="${encodeURI(project.planPath)}" download>下载 PDF</a>`;
   }
 
+  function scheduleBlock(project) {
+    if (!project.sessions || !project.sessions.length) return "";
+    return `
+      <div class="project-card__schedule">
+        <span>开课时间</span>
+        <div class="project-card__sessions">
+          ${project.sessions
+            .map(
+              (session) => `
+                <div class="project-card__session">
+                  <em>${session.label}</em>
+                  <strong>${session.date}</strong>
+                </div>
+              `
+            )
+            .join("")}
+        </div>
+      </div>
+    `;
+  }
+
   function renderProjects() {
     const filtered = getFilteredProjects();
     const hasFilter =
@@ -95,7 +119,7 @@
           return `
           <article class="project-card project-card--${project.type}">
             <a class="project-card__poster" href="projects/${project.slug}.html" aria-label="查看 ${project.name} 详情">
-              <img src="${encodeURI(posterPath)}" alt="${project.name} 项目海报" loading="lazy" decoding="async">
+              <img src="${encodeURI(posterPath)}" alt="${project.name} 项目海报" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/project-media/shared/project-placeholder.svg';">
             </a>
             <div class="project-card__top">
               <span class="project-type">${project.type}</span>
@@ -114,6 +138,7 @@
                 .map((subject) => `<span class="detail-chip detail-chip--subject">${subject}</span>`)
                 .join("")}
             </div>
+            ${scheduleBlock(project)}
             <div class="project-card__meta">
               <div><span>人数</span><strong>${project.seats} 人</strong></div>
               <div><span>天数</span><strong>${project.days} 天</strong></div>

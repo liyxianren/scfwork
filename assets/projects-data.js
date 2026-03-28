@@ -686,6 +686,137 @@ window.SUMMER_PROJECTS = [
   }
 ];
 
+const PROJECT_SCHEDULES = {
+  "vibe-coding-advanced": [
+    { label: "7月班", date: "7月6日-7月10日" },
+    { label: "8月班", date: "8月3日-8月7日" }
+  ],
+  "vibe-coding-starter": [
+    { label: "7月班", date: "7月13日-7月17日" },
+    { label: "8月班", date: "8月10日-8月14日" }
+  ],
+  "openclaw-camp": [
+    { label: "7月班", date: "7月20日-7月24日" },
+    { label: "8月班", date: "8月17日-8月21日" }
+  ],
+  "emotion-early-intervention": [
+    { label: "7月班", date: "7月27日-7月31日" },
+    { label: "8月班", date: "8月24日-8月28日" }
+  ],
+  "tongue-diagnosis-ai": [
+    { label: "7月班", date: "7月6日-7月10日" },
+    { label: "8月班", date: "8月3日-8月7日" }
+  ],
+  "gut-acoustic-ai": [
+    { label: "7月班", date: "7月13日-7月17日" },
+    { label: "8月班", date: "8月10日-8月14日" }
+  ],
+  "smart-pet-walker": [
+    { label: "7月班", date: "7月20日-7月24日" },
+    { label: "8月班", date: "8月17日-8月21日" }
+  ],
+  "shade-cloud": [
+    { label: "7月班", date: "7月27日-7月31日" },
+    { label: "8月班", date: "8月24日-8月28日" }
+  ],
+  "memory-guardian": [
+    { label: "7月班", date: "7月6日-7月10日" },
+    { label: "8月班", date: "8月3日-8月7日" }
+  ],
+  "parkinson-band": [
+    { label: "7月班", date: "7月13日-7月17日" },
+    { label: "8月班", date: "8月10日-8月14日" }
+  ],
+  "upper-limb-exoskeleton": [
+    { label: "7月班", date: "7月20日-7月24日" },
+    { label: "8月班", date: "8月17日-8月21日" }
+  ],
+  "micro-wind-power": [
+    { label: "7月班", date: "7月27日-7月31日" },
+    { label: "8月班", date: "8月24日-8月28日" }
+  ],
+  "ai-vision-eye": [
+    { label: "7月班", date: "7月6日-7月10日" },
+    { label: "8月班", date: "8月3日-8月7日" }
+  ],
+  "humanoid-robot": [
+    { label: "7月班", date: "7月13日-7月17日" },
+    { label: "8月班", date: "8月10日-8月14日" }
+  ],
+  "smart-planter": [
+    { label: "7月班", date: "7月20日-7月24日" },
+    { label: "8月班", date: "8月17日-8月21日" }
+  ],
+  "smart-pillbox": [
+    { label: "7月班", date: "7月27日-7月31日" },
+    { label: "8月班", date: "8月24日-8月28日" }
+  ],
+  "desktop-pet": [
+    { label: "一期", date: "6月15日-6月19日" },
+    { label: "二期", date: "6月29日-7月3日" }
+  ],
+  "global-interstellar-routing": [
+    { label: "一期", date: "6月15日-6月19日" },
+    { label: "二期", date: "6月29日-7月3日" }
+  ],
+  "economic-cycle-reconstruction": [
+    { label: "一期", date: "6月22日-6月26日" },
+    { label: "二期", date: "7月6日-7月10日" }
+  ]
+};
+
+const UPCOMING_PLACEHOLDER_PROJECTS = [
+  {
+    slug: "global-interstellar-routing",
+    name: "全球星间路由优化系统",
+    type: "纯软",
+    category: "系统建模",
+    subjects: ["应用数学", "计算机", "航空航天工程", "运筹学"],
+    grade: "9-11",
+    direction: "图论数学建模航天",
+    seats: 5,
+    days: 5,
+    requirement: "建议具备基础逻辑与建模兴趣",
+    status: "资料整理中",
+    summary: "后续将补充的系统优化类项目，占位页先开放，便于统一展示暑期排期与项目池结构。",
+    intro: "该项目计划纳入后续暑期项目池，当前先保留项目名称、适合年级和开课批次，详细介绍与计划书后续补齐。",
+    focus: ["图论与系统优化", "数学建模表达", "航天场景问题拆解"],
+    outcomes: ["后续补充正式项目计划书", "预留网站占位入口", "统一展示项目池时间安排"],
+    planPath: null
+  },
+  {
+    slug: "economic-cycle-reconstruction",
+    name: "经济周期重构系统",
+    type: "纯软",
+    category: "系统建模",
+    subjects: ["应用数学", "统计学", "计算机", "经济/金融/商业"],
+    grade: "9-11",
+    direction: "数学经济学计算机",
+    seats: 5,
+    days: 5,
+    requirement: "建议对数学与经济建模有兴趣",
+    status: "资料整理中",
+    summary: "后续将补充的建模方向项目，占位页先开放，便于统一展示项目池结构和开课时间。",
+    intro: "该项目计划后续纳入暑期项目站，当前先保留基本信息和时间安排，详细内容与正式计划书会在后续补齐。",
+    focus: ["经济周期理解", "数学建模表达", "计算机辅助分析"],
+    outcomes: ["后续补充正式项目计划书", "预留网站占位入口", "统一展示项目池时间安排"],
+    planPath: null
+  }
+];
+
+function attachSchedule(project) {
+  const sessions = PROJECT_SCHEDULES[project.slug] || [];
+  return {
+    ...project,
+    sessions,
+    scheduleSummary: sessions.map((item) => `${item.label}：${item.date}`).join(" / ")
+  };
+}
+
+window.SUMMER_PROJECTS = window.SUMMER_PROJECTS
+  .map(attachSchedule)
+  .concat(UPCOMING_PLACEHOLDER_PROJECTS.map(attachSchedule));
+
 window.getProjectBySlug = function getProjectBySlug(slug) {
   return window.SUMMER_PROJECTS.find(function (project) {
     return project.slug === slug;
