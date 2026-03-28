@@ -119,6 +119,125 @@
       </div>
     `;
 
+  const VISUAL_PLACEHOLDER = "assets/project-media/shared/project-placeholder.svg";
+
+  function isPdfPreview(src) {
+    return /pdf-page-\d+\.(png|jpe?g|webp)$/i.test(src || "");
+  }
+
+  function isPosterImage(src) {
+    return /poster(-card)?\.(png|jpe?g|webp)$/i.test(src || "");
+  }
+
+  function normalizeVisualFrame(frame, fallbackTitle) {
+    if (!frame || !frame.src) return null;
+    return {
+      src: frame.src,
+      alt: frame.alt || frame.caption || fallbackTitle || project.name,
+      caption: frame.caption || fallbackTitle || "",
+      title: frame.title || fallbackTitle || "",
+      description: frame.description || ""
+    };
+  }
+
+  function buildVisualFrames(detailPage) {
+    const explicitFrames = (detailPage.visualFrames || [])
+      .map((frame, index) =>
+        normalizeVisualFrame(
+          frame,
+          index === 0 ? "项目海报" : index === 1 ? "场景参考" : "成果参考"
+        )
+      )
+      .filter(Boolean);
+
+    if (explicitFrames.length) {
+      const padded = explicitFrames.slice(0, 3);
+      while (padded.length < 3) {
+        const title = padded.length === 1 ? "场景参考（待补）" : "成果参考（待补）";
+        padded.push({
+          src: VISUAL_PLACEHOLDER,
+          alt: title,
+          caption: title,
+          title,
+          description: "该位置后续补充更合适的外宣配图。"
+        });
+      }
+      return padded;
+    }
+
+    const seen = new Set();
+    const frames = [];
+    const pushFrame = function pushFrame(src, meta) {
+      if (!src || seen.has(src)) return;
+      seen.add(src);
+      frames.push(
+        normalizeVisualFrame(
+          {
+            src,
+            alt: meta.alt,
+            caption: meta.caption,
+            title: meta.title,
+            description: meta.description
+          },
+          meta.title
+        )
+      );
+    };
+
+    if (detailPage.heroImage && !isPdfPreview(detailPage.heroImage)) {
+      pushFrame(detailPage.heroImage, {
+        title: "项目海报",
+        caption: detailPage.heroCaption || `${project.name} 项目海报`,
+        alt: detailPage.heroAlt || `${project.name} 项目海报`,
+        description: "这一张用于首页、详情页和线下外宣场景，优先展示项目整体风格。"
+      });
+    }
+
+    (detailPage.gallery || []).forEach((item) => {
+      if (!item || !item.src || isPdfPreview(item.src) || isPosterImage(item.src)) return;
+      pushFrame(item.src, {
+        title: frames.length === 1 ? "场景参考" : "成果参考",
+        caption: item.caption || "",
+        alt: item.alt || item.caption || project.name,
+        description:
+          frames.length === 1
+            ? "建议放应用场景、官方案例或产品参考图，帮助家长快速理解“这是做什么的”。"
+            : "建议放成果效果、交互界面或产品细节参考图，帮助家长理解最后会做成什么样。"
+      });
+    });
+
+    const slots = [
+      {
+        title: "项目海报",
+        description: "这一张用于首页、详情页和线下外宣场景，优先展示项目整体风格。"
+      },
+      {
+        title: "场景参考",
+        description: "建议放应用场景、官方案例或产品参考图，帮助家长快速理解“这是做什么的”。"
+      },
+      {
+        title: "成果参考",
+        description: "建议放成果效果、交互界面或产品细节参考图，帮助家长理解最后会做成什么样。"
+      }
+    ];
+
+    const finalFrames = [];
+    for (let index = 0; index < 3; index += 1) {
+      if (frames[index]) {
+        finalFrames.push(frames[index]);
+      } else {
+        finalFrames.push({
+          src: VISUAL_PLACEHOLDER,
+          alt: `${slots[index].title}（待补）`,
+          caption: `${slots[index].title}（待补）`,
+          title: `${slots[index].title}（待补）`,
+          description: slots[index].description
+        });
+      }
+    }
+    return finalFrames;
+  }
+
   function renderQuickView(detailPage) {
     if (!detailPage.quickView || !detailPage.quickView.length) return "";
     return `
@@ -177,13 +296,6 @@
         </ul>
       `
       : "";
-    const image = section.image
-      ? `
-        <div class="media-card">
-          <img src="${encodeURI(`../${section.image}`)}" alt="${section.imageAlt || section.title}" loading="lazy" decoding="async">
-        </div>
-      `
-      : "";
     const compare = section.compare
       ? `
         <div class="table-shell">
@@ -220,25 +332,10 @@
           <p class="eyebrow eyebrow--dark">Why It Matters</p>
           <h2>${section.title}</h2>
         </div>
-        ${
-          section.imageMode === "document"
-            ? `
-              <div class="rich-copy">
-                ${paragraphs}
-                ${bullets}
-              </div>
-              ${renderDocumentPreview(section)}
-            `
-            : `
-              <div class="insight-layout">
-                <div class="rich-copy">
-                  ${paragraphs}
-                  ${bullets}
-                </div>
-                ${image}
-              </div>
-            `
-        }
+        <div class="rich-copy">
+          ${paragraphs}
+          ${bullets}
+        </div>
         ${compare}
       </article>
     `;
@@ -268,7 +365,6 @@
               .join("")}
           </div>
         </div>
-        ${section.image ? renderDocumentPreview(section) : ""}
       </article>
     `;
   }
@@ -362,12 +458,50 @@
                     <p>${item.a}</p>
                   </article>
                 `
-              )
-              .join("")}
+            )
+            .join("")}
           </div>
         </div>
-        ${section.image ? renderDocumentPreview(section) : ""}
       </article>
+    `;
+  }
+
+  function renderVisualFramework(detailPage) {
+    const frames = buildVisualFrames(detailPage);
+    if (!frames.length) return "";
+    return `
+      <section class="visual-framework-section">
+        <div class="rich-section__head">
+          <p class="eyebrow eyebrow--dark">Visual Framework</p>
+          <h2>项目视觉材料</h2>
+          <p>详情页统一固定三张图：项目海报、场景参考、成果参考。后续补素材时，只需要替换这三个位置。</p>
+        </div>
+        <div class="visual-framework-grid">
+          ${frames
+            .map(
+              (item) => `
+                <figure class="visual-framework-card">
+                  <div class="visual-framework-card__meta">
+                    <span>${item.title}</span>
+                    ${item.description ? `<p>${item.description}</p>` : ""}
+                  </div>
+                  <button
+                    class="visual-framework-card__button zoomable-media"
+                    type="button"
+                    data-image-src="${encodeURI(`../${item.src}`)}"
+                    data-image-alt="${item.alt || item.title || project.name}"
+                    data-image-caption="${item.caption || item.alt || item.title || project.name}"
+                  >
+                    <img src="${encodeURI(`../${item.src}`)}" alt="${item.alt || item.title || project.name}" loading="lazy" decoding="async">
+                    <span class="zoom-badge">点击放大</span>
+                  </button>
+                  <figcaption>${item.caption || item.title || ""}</figcaption>
+                </figure>
+              `
+            )
+            .join("")}
+        </div>
+      </section>
     `;
   }
 
@@ -505,6 +639,8 @@
 
         ${renderQuickView(detailPage)}
 
+        ${renderVisualFramework(detailPage)}
+
         <section class="detail-layout detail-layout--feature">
           <div class="detail-main detail-main--rich">
             ${(detailPage.sections || []).map(renderRichSection).join("")}
@@ -566,8 +702,6 @@
             </div>
           </aside>
         </section>
-
-        ${renderGallery(detailPage)}
 
         <section>
           <div class="related-heading">
