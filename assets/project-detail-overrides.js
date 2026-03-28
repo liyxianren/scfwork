@@ -320,6 +320,13 @@
         title: "场景参考",
         caption: "桌面陪伴型产品参考",
         description: "这一张更适合放产品调性和角色互动参考，而不是放计划书内页。"
+      },
+      {
+        src: "assets/project-media/desktop-pet/loona-home.png",
+        alt: "Loona 官方页面截图",
+        title: "成果参考",
+        caption: "桌面陪伴型产品成果参考",
+        description: "这一张用来展示最后做出来的桌面陪伴机器人效果。"
       }
     ]);
     desktopPet.gallery = [
@@ -333,9 +340,111 @@
         alt: "Loona 官方页面截图",
         caption: "AI 桌面陪伴产品参考"
       },
+      {
+        src: "assets/project-media/desktop-pet/loona-home.png",
+        alt: "Loona 官方页面截图",
+        caption: "AI 桌面陪伴成果参考"
+      },
       ...(desktopPet.gallery || [])
     ];
   }
+
+  const placeholderPoster = "assets/project-media/shared/project-placeholder.svg";
+  setVisualFrames("ai-future-player-starter", [
+    {
+      src: placeholderPoster,
+      alt: "AI未来玩家启蒙计划 项目海报占位图",
+      title: "项目海报",
+      caption: "AI未来玩家启蒙计划 项目海报",
+      description: "当前先用统一海报位承接项目标题，后续可替换成正式宣传海报。"
+    },
+    {
+      src: "assets/project-media/ai-future-player-starter/scene-reference.jpg",
+      alt: "AI学习场景参考图",
+      title: "场景参考",
+      caption: "AI 学习场景参考",
+      description: "用于展示学生使用 AI 工具学习、创作与探索的真实场景。"
+    },
+    {
+      src: "assets/project-media/ai-future-player-starter/outcome-reference.png",
+      alt: "AI创作成果参考图",
+      title: "成果参考",
+      caption: "AI 创作成果参考",
+      description: "用于展示孩子最终会做出的 AI 作品形态。"
+    }
+  ]);
+
+  setVisualFrames("single-leg-exoskeleton", [
+    {
+      src: placeholderPoster,
+      alt: "单腿机械外骨骼 项目海报占位图",
+      title: "项目海报",
+      caption: "单腿机械外骨骼 项目海报",
+      description: "当前先用统一海报位承接项目主题，后续可替换成正式宣传海报。"
+    },
+    {
+      src: "assets/project-media/single-leg-exoskeleton/scene-reference.jpg",
+      alt: "单腿外骨骼场景参考图",
+      title: "场景参考",
+      caption: "单腿外骨骼场景参考",
+      description: "用于说明康复训练和步态辅助这类真实应用场景。"
+    },
+    {
+      src: "assets/project-media/single-leg-exoskeleton/outcome-reference.jpg",
+      alt: "单腿外骨骼成果参考图",
+      title: "成果参考",
+      caption: "单腿外骨骼成果参考",
+      description: "用于展示项目最终会做成怎样的助力装置。"
+    }
+  ]);
+
+  setVisualFrames("global-interstellar-routing", [
+    {
+      src: placeholderPoster,
+      alt: "全球星间路由优化系统 项目海报占位图",
+      title: "项目海报",
+      caption: "全球星间路由优化系统 项目海报",
+      description: "当前先用统一海报位承接项目主题，后续可替换成正式宣传海报。"
+    },
+    {
+      src: "assets/project-media/global-interstellar-routing/scene-reference.jpg",
+      alt: "深空通信与路由参考图",
+      title: "场景参考",
+      caption: "深空通信场景参考",
+      description: "用于说明星间通信、深空网络和航天系统协同这类应用场景。"
+    },
+    {
+      src: "assets/project-media/global-interstellar-routing/outcome-reference.png",
+      alt: "星际网络与路由成果参考图",
+      title: "成果参考",
+      caption: "星际路由成果参考",
+      description: "用于展示项目最后会做出的图论优化与航天网络表达。"
+    }
+  ]);
+
+  setVisualFrames("economic-cycle-reconstruction", [
+    {
+      src: placeholderPoster,
+      alt: "经济周期重构系统 项目海报占位图",
+      title: "项目海报",
+      caption: "经济周期重构系统 项目海报",
+      description: "当前先用统一海报位承接项目主题，后续可替换成正式宣传海报。"
+    },
+    {
+      src: "assets/project-media/economic-cycle-reconstruction/scene-reference.jpg",
+      alt: "经济与周期分析场景参考图",
+      title: "场景参考",
+      caption: "经济分析场景参考",
+      description: "用于说明数据分析、趋势研判和经济建模这类学习场景。"
+    },
+    {
+      src: "assets/project-media/economic-cycle-reconstruction/outcome-reference.png",
+      alt: "经济周期重构成果参考图",
+      title: "成果参考",
+      caption: "经济周期重构成果参考",
+      description: "用于展示项目最后会做成怎样的数据分析和建模成果。"
+    }
+  ]);
 
   setVisualFrames("parkinson-band", [
     {
@@ -547,4 +656,167 @@
       }
     ]);
   }
+
+  setVisualFrames("desktop-pet", [
+    {
+      src: "assets/project-media/desktop-pet/poster.jpg",
+      alt: "智能桌宠 项目海报",
+      title: "项目海报",
+      caption: "智能桌宠 项目海报"
+    },
+    {
+      src: "assets/project-media/desktop-pet/loona-home-crop.png",
+      alt: "桌面陪伴型产品场景参考图",
+      title: "场景参考",
+      caption: "桌面陪伴产品场景参考"
+    },
+    {
+      src: "assets/project-media/desktop-pet/loona-home.png",
+      alt: "桌面陪伴型产品成果参考图",
+      title: "成果参考",
+      caption: "桌面陪伴产品成果参考"
+    }
+  ]);
+
+  function registerPlaceholderDetail(slug, name, intro, quickView) {
+    window.PROJECT_DETAIL_CONTENT[slug] = window.PROJECT_DETAIL_CONTENT[slug] || {};
+    window.PROJECT_DETAIL_CONTENT[slug].detailPage = {
+      kicker: "Project Detail",
+      heroMode: "poster",
+      heroImage: "assets/project-media/shared/project-placeholder.svg",
+      heroAlt: `${name} 项目海报`,
+      heroCaption: `${name} 项目海报`,
+      quickView,
+      sections: [],
+      gallery: []
+    };
+  }
+
+  registerPlaceholderDetail(
+    "ai-future-player-starter",
+    "AI未来玩家启蒙计划",
+    "面向 5-8 年级学生的 AI 工具启蒙项目，重点是把 AI 作为学习和创意表达的助手来使用。",
+    [
+      { label: "这 5 天会做什么", value: "围绕 AI 工具认知、轻量化创意生成和基础交互，完成一个能展示的入门成果。" },
+      { label: "课程结束能看到什么", value: "软件原型 + 项目说明文档" },
+      { label: "更适合哪类学生", value: "对 AI 工具、创意表达和轻量项目感兴趣的初中低年级学生。" },
+      { label: "为什么值得学", value: "孩子会更早理解 AI 不是抽象概念，而是可以直接拿来做作品的工具。" }
+    ]
+  );
+  setVisualFrames("ai-future-player-starter", [
+    {
+      src: "assets/project-media/shared/project-placeholder.svg",
+      alt: "AI未来玩家启蒙计划 项目海报",
+      title: "项目海报",
+      caption: "AI未来玩家启蒙计划 项目海报"
+    },
+    {
+      src: "assets/project-media/ai-future-player-starter/scene-reference.jpg",
+      alt: "AI 工具启蒙课堂场景参考图",
+      title: "场景参考",
+      caption: "AI 工具启蒙课堂参考"
+    },
+    {
+      src: "assets/project-media/ai-future-player-starter/outcome-reference.png",
+      alt: "AI 工具生成成果参考图",
+      title: "成果参考",
+      caption: "AI 工具生成成果参考"
+    }
+  ]);
+
+  registerPlaceholderDetail(
+    "single-leg-exoskeleton",
+    "单腿机械外骨骼",
+    "面向 9-11 年级学生的机械电子与生物医学项目，强调助力结构、控制逻辑和康复辅助场景。",
+    [
+      { label: "这 5 天会做什么", value: "从助力结构、佩戴方式和控制逻辑入手，先搭出单腿外骨骼的核心概念。" },
+      { label: "课程结束能看到什么", value: "实物原型 + 项目说明文档" },
+      { label: "更适合哪类学生", value: "对机械结构、助力设备和康复辅助方向感兴趣的学生。" },
+      { label: "为什么值得学", value: "它能把机械设计、电子控制和真实健康场景连起来，工程感很强。" }
+    ]
+  );
+  setVisualFrames("single-leg-exoskeleton", [
+    {
+      src: "assets/project-media/shared/project-placeholder.svg",
+      alt: "单腿机械外骨骼 项目海报",
+      title: "项目海报",
+      caption: "单腿机械外骨骼 项目海报"
+    },
+    {
+      src: "assets/project-media/single-leg-exoskeleton/scene-reference.jpg",
+      alt: "单腿外骨骼康复场景参考图",
+      title: "场景参考",
+      caption: "单腿外骨骼康复场景参考"
+    },
+    {
+      src: "assets/project-media/single-leg-exoskeleton/outcome-reference.webp",
+      alt: "单腿外骨骼成果参考图",
+      title: "成果参考",
+      caption: "单腿外骨骼成果参考"
+    }
+  ]);
+
+  registerPlaceholderDetail(
+    "global-interstellar-routing",
+    "全球星间路由优化系统",
+    "面向 9-11 年级学生的纯软建模项目，关注卫星网络、图论优化与航天场景下的信息路由。",
+    [
+      { label: "这 5 天会做什么", value: "把星间通信抽象成网络优化问题，先理解路由再做模型表达。" },
+      { label: "课程结束能看到什么", value: "软件原型 + 项目说明文档" },
+      { label: "更适合哪类学生", value: "对航天、运筹优化、图论和系统建模感兴趣的学生。" },
+      { label: "为什么值得学", value: "它能帮助学生建立从真实问题到数学模型的完整思路。" }
+    ]
+  );
+  setVisualFrames("global-interstellar-routing", [
+    {
+      src: "assets/project-media/shared/project-placeholder.svg",
+      alt: "全球星间路由优化系统 项目海报",
+      title: "项目海报",
+      caption: "全球星间路由优化系统 项目海报"
+    },
+    {
+      src: "assets/project-media/global-interstellar-routing/scene-reference.jpg",
+      alt: "卫星通信与地面站场景参考图",
+      title: "场景参考",
+      caption: "卫星通信场景参考"
+    },
+    {
+      src: "assets/project-media/global-interstellar-routing/outcome-reference.svg",
+      alt: "星间路由网络结构参考图",
+      title: "成果参考",
+      caption: "星间路由网络成果参考"
+    }
+  ]);
+
+  registerPlaceholderDetail(
+    "economic-cycle-reconstruction",
+    "经济周期重构系统",
+    "面向 9-11 年级学生的纯软建模项目，关注经济周期、数据分析和模型重构。",
+    [
+      { label: "这 5 天会做什么", value: "通过宏观经济数据和图表，理解周期变化并尝试做出重构表达。" },
+      { label: "课程结束能看到什么", value: "软件原型 + 项目说明文档" },
+      { label: "更适合哪类学生", value: "对数学建模、经济分析和数据表达感兴趣的学生。" },
+      { label: "为什么值得学", value: "它能把数据、模型和现实经济问题连起来，适合作为进阶项目入口。" }
+    ]
+  );
+  setVisualFrames("economic-cycle-reconstruction", [
+    {
+      src: "assets/project-media/shared/project-placeholder.svg",
+      alt: "经济周期重构系统 项目海报",
+      title: "项目海报",
+      caption: "经济周期重构系统 项目海报"
+    },
+    {
+      src: "assets/project-media/economic-cycle-reconstruction/scene-reference.png",
+      alt: "经济分析与图表场景参考图",
+      title: "场景参考",
+      caption: "经济分析场景参考"
+    },
+    {
+      src: "assets/project-media/economic-cycle-reconstruction/outcome-reference.svg",
+      alt: "经济周期图示成果参考图",
+      title: "成果参考",
+      caption: "经济周期重构成果参考"
+    }
+  ]);
 })();
