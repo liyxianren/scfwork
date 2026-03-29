@@ -377,30 +377,6 @@
     }
   ]);
 
-  setVisualFrames("single-leg-exoskeleton", [
-    {
-      src: placeholderPoster,
-      alt: "单腿机械外骨骼 项目海报占位图",
-      title: "项目海报",
-      caption: "单腿机械外骨骼 项目海报",
-      description: "当前先用统一海报位承接项目主题，后续可替换成正式宣传海报。"
-    },
-    {
-      src: "assets/project-media/single-leg-exoskeleton/scene-reference.jpg",
-      alt: "单腿外骨骼场景参考图",
-      title: "场景参考",
-      caption: "单腿外骨骼场景参考",
-      description: "用于说明康复训练和步态辅助这类真实应用场景。"
-    },
-    {
-      src: "assets/project-media/single-leg-exoskeleton/outcome-reference.jpg",
-      alt: "单腿外骨骼成果参考图",
-      title: "成果参考",
-      caption: "单腿外骨骼成果参考",
-      description: "用于展示项目最终会做成怎样的助力装置。"
-    }
-  ]);
-
   setVisualFrames("global-interstellar-routing", [
     {
       src: "assets/project-media/global-interstellar-routing/poster.jpg",
@@ -695,35 +671,27 @@
     };
   }
 
-  registerPlaceholderDetail(
-    "single-leg-exoskeleton",
-    "单腿机械外骨骼",
-    "面向 9-11 年级学生的机械电子与生物医学项目，强调助力结构、控制逻辑和康复辅助场景。",
-    [
-      { label: "这 5 天会做什么", value: "从助力结构、佩戴方式和控制逻辑入手，先搭出单腿外骨骼的核心概念。" },
-      { label: "课程结束能看到什么", value: "实物原型 + 项目说明文档" },
-      { label: "更适合哪类学生", value: "对机械结构、助力设备和康复辅助方向感兴趣的学生。" },
-      { label: "为什么值得学", value: "它能把机械设计、电子控制和真实健康场景连起来，工程感很强。" }
-    ]
-  );
   setVisualFrames("single-leg-exoskeleton", [
     {
       src: "assets/project-media/shared/project-placeholder.svg",
       alt: "单腿机械外骨骼 项目海报",
       title: "项目海报",
-      caption: "单腿机械外骨骼 项目海报"
+      caption: "单腿机械外骨骼 项目海报",
+      description: "当前先以项目海报位承接主题，后续可替换为正式宣传海报。"
     },
     {
       src: "assets/project-media/single-leg-exoskeleton/scene-reference.jpg",
       alt: "单腿外骨骼康复场景参考图",
       title: "场景参考",
-      caption: "单腿外骨骼康复场景参考"
+      caption: "单腿外骨骼康复场景参考",
+      description: "用于说明单侧步态辅助、康复训练和实际穿戴应用场景。"
     },
     {
-      src: "assets/project-media/single-leg-exoskeleton/outcome-reference.webp",
+      src: "assets/project-media/single-leg-exoskeleton/outcome-reference.jpg",
       alt: "单腿外骨骼成果参考图",
       title: "成果参考",
-      caption: "单腿外骨骼成果参考"
+      caption: "单腿外骨骼成果参考",
+      description: "用于展示项目最终成果会接近怎样的机械结构与助力装置。"
     }
   ]);
 

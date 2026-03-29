@@ -30,6 +30,7 @@ PROJECTS = {
     "smart-pillbox": "智能药盒",
     "desktop-pet": "智能桌宠",
     "ai-future-player-starter": "AI未来玩家启蒙计划",
+    "single-leg-exoskeleton": "单腿机械外骨骼",
     "global-interstellar-routing": "全球星间路由优化系统",
     "economic-cycle-reconstruction": "经济周期重构系统",
 }

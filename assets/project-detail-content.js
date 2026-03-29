@@ -1340,7 +1340,7 @@ window.PROJECT_DETAIL_CONTENT = {
     "detailPage": {
       "kicker": "Project Detail",
       "heroMode": "document",
-      "heroImage": "assets/project-media/shared/project-placeholder.svg",
+      "heroImage": "assets/project-media/parkinson-band/pdf-page-1.png",
       "heroCaption": "项目计划书第一页预览，点击可放大查看。",
       "quickView": [
         {
@@ -1364,7 +1364,7 @@ window.PROJECT_DETAIL_CONTENT = {
         {
           "type": "insight",
           "title": "项目背景：为什么值得学这个项目？",
-          "image": "assets/project-media/shared/project-placeholder.svg",
+          "image": "assets/project-media/parkinson-band/pdf-page-2.png",
           "imageAlt": "帕金森手环 计划书内页预览",
           "imageMode": "document",
           "imageCaption": "项目计划书内页预览，点击可放大查看。",
@@ -1443,7 +1443,11 @@ window.PROJECT_DETAIL_CONTENT = {
               "detail": "统一调试原型、优化展示节奏，并完成说明文档和展示讲稿。",
               "output": "可穿戴原型 + 项目说明文档"
             }
-          ]
+          ],
+          "image": "assets/project-media/parkinson-band/pdf-page-3.png",
+          "imageAlt": "帕金森手环 课程安排资料页预览",
+          "imageMode": "document",
+          "imageCaption": "课程安排资料页预览，点击可放大查看。"
         },
         {
           "type": "cards",
@@ -1530,9 +1534,19 @@ window.PROJECT_DETAIL_CONTENT = {
       ],
       "gallery": [
         {
-          "src": "assets/project-media/shared/project-placeholder.svg",
-          "alt": "项目资料整理中占位图",
-          "caption": "项目资料整理中"
+          "src": "assets/project-media/parkinson-band/pdf-page-1.png",
+          "alt": "帕金森手环 计划书第 1 页预览",
+          "caption": "项目计划书第 1 页预览"
+        },
+        {
+          "src": "assets/project-media/parkinson-band/pdf-page-2.png",
+          "alt": "帕金森手环 计划书第 2 页预览",
+          "caption": "项目计划书第 2 页预览"
+        },
+        {
+          "src": "assets/project-media/parkinson-band/pdf-page-3.png",
+          "alt": "帕金森手环 计划书第 3 页预览",
+          "caption": "项目计划书第 3 页预览"
         }
       ]
     }
@@ -2247,7 +2261,7 @@ window.PROJECT_DETAIL_CONTENT = {
     "detailPage": {
       "kicker": "Project Detail",
       "heroMode": "document",
-      "heroImage": "assets/project-media/shared/project-placeholder.svg",
+      "heroImage": "assets/project-media/smart-planter/pdf-page-1.png",
       "heroCaption": "项目计划书第一页预览，点击可放大查看。",
       "quickView": [
         {
@@ -2271,7 +2285,7 @@ window.PROJECT_DETAIL_CONTENT = {
         {
           "type": "insight",
           "title": "项目背景：为什么孩子会一下子理解这个项目？",
-          "image": "assets/project-media/shared/project-placeholder.svg",
+          "image": "assets/project-media/smart-planter/pdf-page-2.png",
           "imageAlt": "智能花盆 计划书内页预览",
           "imageMode": "document",
           "imageCaption": "项目计划书内页预览，点击可放大查看。",
@@ -2321,7 +2335,11 @@ window.PROJECT_DETAIL_CONTENT = {
               "detail": "处理数据联通、功能调试和展示材料，让作品能够完整讲述。",
               "output": "实物原型 + 项目说明文档"
             }
-          ]
+          ],
+          "image": "assets/project-media/smart-planter/pdf-page-3.png",
+          "imageAlt": "智能花盆 课程安排资料页预览",
+          "imageMode": "document",
+          "imageCaption": "课程安排资料页预览，点击可放大查看。"
         },
         {
           "type": "cards",
@@ -2404,9 +2422,19 @@ window.PROJECT_DETAIL_CONTENT = {
       ],
       "gallery": [
         {
-          "src": "assets/project-media/shared/project-placeholder.svg",
-          "alt": "项目资料整理中占位图",
-          "caption": "项目资料整理中"
+          "src": "assets/project-media/smart-planter/pdf-page-1.png",
+          "alt": "智能花盆 计划书第 1 页预览",
+          "caption": "项目计划书第 1 页预览"
+        },
+        {
+          "src": "assets/project-media/smart-planter/pdf-page-2.png",
+          "alt": "智能花盆 计划书第 2 页预览",
+          "caption": "项目计划书第 2 页预览"
+        },
+        {
+          "src": "assets/project-media/smart-planter/pdf-page-3.png",
+          "alt": "智能花盆 计划书第 3 页预览",
+          "caption": "项目计划书第 3 页预览"
         }
       ]
     }
@@ -2415,7 +2443,7 @@ window.PROJECT_DETAIL_CONTENT = {
     "detailPage": {
       "kicker": "Project Detail",
       "heroMode": "document",
-      "heroImage": "assets/project-media/shared/project-placeholder.svg",
+      "heroImage": "assets/project-media/smart-pillbox/pdf-page-1.png",
       "heroCaption": "项目计划书第一页预览，点击可放大查看。",
       "quickView": [
         {
@@ -2439,7 +2467,7 @@ window.PROJECT_DETAIL_CONTENT = {
         {
           "type": "insight",
           "title": "项目背景：为什么这个项目一看就像产品？",
-          "image": "assets/project-media/shared/project-placeholder.svg",
+          "image": "assets/project-media/smart-pillbox/pdf-page-2.png",
           "imageAlt": "智能药盒 计划书内页预览",
           "imageMode": "document",
           "imageCaption": "项目计划书内页预览，点击可放大查看。",
@@ -2489,7 +2517,11 @@ window.PROJECT_DETAIL_CONTENT = {
               "detail": "整理使用步骤、演示话术和项目文档。",
               "output": "实物原型 + 项目说明文档"
             }
-          ]
+          ],
+          "image": "assets/project-media/smart-pillbox/pdf-page-3.png",
+          "imageAlt": "智能药盒 课程安排资料页预览",
+          "imageMode": "document",
+          "imageCaption": "课程安排资料页预览，点击可放大查看。"
         },
         {
           "type": "cards",
@@ -2572,9 +2604,19 @@ window.PROJECT_DETAIL_CONTENT = {
       ],
       "gallery": [
         {
-          "src": "assets/project-media/shared/project-placeholder.svg",
-          "alt": "项目资料整理中占位图",
-          "caption": "项目资料整理中"
+          "src": "assets/project-media/smart-pillbox/pdf-page-1.png",
+          "alt": "智能药盒 计划书第 1 页预览",
+          "caption": "项目计划书第 1 页预览"
+        },
+        {
+          "src": "assets/project-media/smart-pillbox/pdf-page-2.png",
+          "alt": "智能药盒 计划书第 2 页预览",
+          "caption": "项目计划书第 2 页预览"
+        },
+        {
+          "src": "assets/project-media/smart-pillbox/pdf-page-3.png",
+          "alt": "智能药盒 计划书第 3 页预览",
+          "caption": "项目计划书第 3 页预览"
         }
       ]
     }
@@ -2942,6 +2984,184 @@ window.PROJECT_DETAIL_CONTENT = {
         {
           "src": "assets/project-media/ai-future-player-starter/pdf-page-3.png",
           "alt": "AI未来玩家启蒙计划 计划书第 3 页预览",
+          "caption": "项目计划书第 3 页预览"
+        }
+      ]
+    }
+  },
+  "single-leg-exoskeleton": {
+    "detailPage": {
+      "kicker": "Project Detail",
+      "heroMode": "document",
+      "heroImage": "assets/project-media/single-leg-exoskeleton/pdf-page-1.png",
+      "heroCaption": "项目计划书第一页预览，点击可放大查看。",
+      "quickView": [
+        {
+          "label": "这 5 天会做什么",
+          "value": "课程采用项目制推进。孩子不会先被大量理论压住，而是围绕“单腿辅助到底要解决什么问题”逐步推进：先看动作和受力，再做结构，再整理动力和控制，最后通过测试和展示把项目讲清楚。 这种方式的…"
+        },
+        {
+          "label": "课程结束能看到什么",
+          "value": "实物原型 + 项目说明文档"
+        },
+        {
+          "label": "更适合哪类学生",
+          "value": "对外骨骼、机器人、康复设备这类方向有明显兴趣的学生。"
+        },
+        {
+          "label": "为什么值得学",
+          "value": "原始项目材料里提到的核心问题很明确：单腿功能障碍人群真正需要的，并不是一个简单缩小版的双腿外骨骼，而是一套更适合单侧受力、生物力学补偿和健患侧协同的辅助系统。"
+        }
+      ],
+      "sections": [
+        {
+          "type": "insight",
+          "title": "项目背景：为什么单腿外骨骼不能照搬双腿方案",
+          "image": "assets/project-media/single-leg-exoskeleton/pdf-page-2.png",
+          "imageAlt": "单腿机械外骨骼 计划书内页预览",
+          "imageMode": "document",
+          "imageCaption": "项目计划书内页预览，点击可放大查看。",
+          "paragraphs": [
+            "原始项目材料里提到的核心问题很明确：单腿功能障碍人群真正需要的，并不是一个简单缩小版的双腿外骨骼，而是一套更适合单侧受力、生物力学补偿和健患侧协同的辅助系统。",
+            "如果只沿用常见的对称结构，往往会出现步态不自然、负载分布不合理、能量代谢异常和长期代偿性损伤等问题。也正因为如此，这个项目比普通机械拼装更有价值。它要求孩子先理解问题本身，再思考结构、动力和控制如何围绕这个问题展开。"
+          ],
+          "bullets": [
+            "题目很真，面对的是明确的康复与辅助需求，不是泛泛的“做一个会动的装置”。",
+            "非对称结构和单侧助力逻辑，让这个项目天然更有工程深度。",
+            "项目同时连接机械结构、生物力学、动力系统和控制逻辑，能很自然地体现跨学科能力。",
+            "理解单侧下肢助力和双侧对称设备之间的本质区别。"
+          ]
+        },
+        {
+          "type": "schedule",
+          "title": "5 天项目怎么推进",
+          "intro": "课程采用项目制推进。孩子不会先被大量理论压住，而是围绕“单腿辅助到底要解决什么问题”逐步推进：先看动作和受力，再做结构，再整理动力和控制，最后通过测试和展示把项目讲清楚。 这种方式的好处是，孩子能持续看到自己做出来的东西为什么有意义，而不…",
+          "days": [
+            {
+              "day": "Day 1",
+              "title": "场景理解与步态拆解",
+              "detail": "从单腿功能障碍、步态补偿和受力差异切入，明确项目要解决的核心问题。",
+              "output": "完成问题拆解与结构目标"
+            },
+            {
+              "day": "Day 2",
+              "title": "机械结构与 3D 建模",
+              "detail": "设计腰部支撑框架、下肢关节与关键支撑结构，梳理与人体动作轨迹的匹配关系。",
+              "output": "完成核心结构方案"
+            },
+            {
+              "day": "Day 3",
+              "title": "动力系统与能源方案",
+              "detail": "整理电机选型、传动方式和电池续航思路，建立从“带得动”到“适不适合”的判断标准。",
+              "output": "完成动力与系统配置方案"
+            },
+            {
+              "day": "Day 4",
+              "title": "控制逻辑与调试方法",
+              "detail": "围绕反馈数据、自适应助力和基础控制流程，整理控制链路并完成调试思路。",
+              "output": "完成控制流程图与联调方案"
+            },
+            {
+              "day": "Day 5",
+              "title": "测试优化与成果表达",
+              "detail": "进行基础负载测试、缺陷分析和展示脚本整理，形成完整项目说明。",
+              "output": "实物原型 + 项目说明文档"
+            }
+          ],
+          "image": "assets/project-media/single-leg-exoskeleton/pdf-page-3.png",
+          "imageAlt": "单腿机械外骨骼 课程安排资料页预览",
+          "imageMode": "document",
+          "imageCaption": "课程安排资料页预览，点击可放大查看。"
+        },
+        {
+          "type": "cards",
+          "title": "核心工具与方法",
+          "intro": "| 模块 | 内容 | | --- | --- | | 结构设计 | 人体工学支撑件 / 下肢关节结构 / 非对称助力方案 / 3D 建模 | | 动力系统 | 伺服电机选型 / 基础能源管理 / 负载与续航判断 | | 控制逻辑 | 反…",
+          "cards": [
+            {
+              "title": "结构设计",
+              "text": "人体工学支撑件 / 下肢关节结构 / 非对称助力方案 / 3D 建模"
+            },
+            {
+              "title": "动力系统",
+              "text": "伺服电机选型 / 基础能源管理 / 负载与续航判断"
+            },
+            {
+              "title": "控制逻辑",
+              "text": "反馈数据 / 助力强度调节 / 自适应控制思路 / 调试方法"
+            },
+            {
+              "title": "项目重点",
+              "text": "单腿补偿 / 步态自然性 / 健患侧协同 / 康复辅助场景"
+            }
+          ]
+        },
+        {
+          "type": "results",
+          "title": "课程结束后，家长能直接看到什么",
+          "cards": [
+            {
+              "title": "实物原型",
+              "text": "一套围绕单腿助力与步态补偿设计的外骨骼原型，能清楚展示结构与功能思路。"
+            },
+            {
+              "title": "项目说明文档",
+              "text": "一份写清楚项目背景、结构逻辑、控制思路与测试方法的说明文档。"
+            },
+            {
+              "title": "展示表达能力",
+              "text": "孩子能说明为什么单腿外骨骼不能简单照搬双腿方案，以及作品解决了什么问题。"
+            }
+          ]
+        },
+        {
+          "type": "fit",
+          "title": "什么样的学生更适合报名",
+          "goodFit": [
+            "对外骨骼、机器人、康复设备这类方向有明显兴趣的学生。",
+            "喜欢从真实问题出发做设计，而不是只做抽象造型。",
+            "愿意动手调试，并且能接受机械项目需要反复优化。",
+            "希望做一个既有工程感又有社会意义的项目。"
+          ],
+          "notFit": [
+            "只想快速做出一个外观成品，不愿意理解受力和步态逻辑。",
+            "对硬件结构、动力系统和调试完全没有兴趣。",
+            "更想做轻量纯软件项目，不愿意处理机械装置的复杂度。"
+          ]
+        },
+        {
+          "type": "faq",
+          "title": "家长常见问题",
+          "items": [
+            {
+              "q": "这个项目最后能看到什么？",
+              "a": "课程结束时会形成可展示的原型成果和一份项目说明文档。"
+            },
+            {
+              "q": "孩子没有太多基础可以参加吗？",
+              "a": "是否适合主要看项目要求和孩子的投入意愿，页面右侧会保留基础要求和适合年级。"
+            },
+            {
+              "q": "做完后还能继续深化吗？",
+              "a": "可以。网页和 PDF 都会保留后续继续升级、补功能和延展展示的空间。"
+            }
+          ]
+        }
+      ],
+      "gallery": [
+        {
+          "src": "assets/project-media/single-leg-exoskeleton/pdf-page-1.png",
+          "alt": "单腿机械外骨骼 计划书第 1 页预览",
+          "caption": "项目计划书第 1 页预览"
+        },
+        {
+          "src": "assets/project-media/single-leg-exoskeleton/pdf-page-2.png",
+          "alt": "单腿机械外骨骼 计划书第 2 页预览",
+          "caption": "项目计划书第 2 页预览"
+        },
+        {
+          "src": "assets/project-media/single-leg-exoskeleton/pdf-page-3.png",
+          "alt": "单腿机械外骨骼 计划书第 3 页预览",
           "caption": "项目计划书第 3 页预览"
         }
       ]
