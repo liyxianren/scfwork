@@ -29,6 +29,9 @@ PROJECTS = {
     "smart-planter": "智能花盆",
     "smart-pillbox": "智能药盒",
     "desktop-pet": "智能桌宠",
+    "ai-future-player-starter": "AI未来玩家启蒙计划",
+    "global-interstellar-routing": "全球星间路由优化系统",
+    "economic-cycle-reconstruction": "经济周期重构系统",
 }
 
 PLACEHOLDER_RELATIVE = "assets/project-media/shared/project-placeholder.svg"
@@ -194,14 +197,17 @@ def render_pdf_previews(slug: str, pdf_path: Path | None) -> list[str]:
     media_dir.mkdir(parents=True, exist_ok=True)
 
     output_paths: list[str] = []
-    with fitz.open(pdf_path) as document:
-        max_pages = min(3, document.page_count)
-        for index in range(max_pages):
-            output_path = media_dir / f"pdf-page-{index + 1}.png"
-            page = document.load_page(index)
-            pixmap = page.get_pixmap(matrix=fitz.Matrix(1.65, 1.65), alpha=False)
-            pixmap.save(output_path)
-            output_paths.append(f"assets/project-media/{slug}/pdf-page-{index + 1}.png")
+    try:
+        with fitz.open(pdf_path) as document:
+            max_pages = min(3, document.page_count)
+            for index in range(max_pages):
+                output_path = media_dir / f"pdf-page-{index + 1}.png"
+                page = document.load_page(index)
+                pixmap = page.get_pixmap(matrix=fitz.Matrix(1.65, 1.65), alpha=False)
+                pixmap.save(output_path)
+                output_paths.append(f"assets/project-media/{slug}/pdf-page-{index + 1}.png")
+    except Exception:
+        return []
     return output_paths
 
 

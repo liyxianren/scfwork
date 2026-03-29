@@ -1340,7 +1340,7 @@ window.PROJECT_DETAIL_CONTENT = {
     "detailPage": {
       "kicker": "Project Detail",
       "heroMode": "document",
-      "heroImage": "assets/project-media/parkinson-band/pdf-page-1.png",
+      "heroImage": "assets/project-media/shared/project-placeholder.svg",
       "heroCaption": "项目计划书第一页预览，点击可放大查看。",
       "quickView": [
         {
@@ -1364,7 +1364,7 @@ window.PROJECT_DETAIL_CONTENT = {
         {
           "type": "insight",
           "title": "项目背景：为什么值得学这个项目？",
-          "image": "assets/project-media/parkinson-band/pdf-page-2.png",
+          "image": "assets/project-media/shared/project-placeholder.svg",
           "imageAlt": "帕金森手环 计划书内页预览",
           "imageMode": "document",
           "imageCaption": "项目计划书内页预览，点击可放大查看。",
@@ -1443,11 +1443,7 @@ window.PROJECT_DETAIL_CONTENT = {
               "detail": "统一调试原型、优化展示节奏，并完成说明文档和展示讲稿。",
               "output": "可穿戴原型 + 项目说明文档"
             }
-          ],
-          "image": "assets/project-media/parkinson-band/pdf-page-3.png",
-          "imageAlt": "帕金森手环 课程安排资料页预览",
-          "imageMode": "document",
-          "imageCaption": "课程安排资料页预览，点击可放大查看。"
+          ]
         },
         {
           "type": "cards",
@@ -1534,19 +1530,9 @@ window.PROJECT_DETAIL_CONTENT = {
       ],
       "gallery": [
         {
-          "src": "assets/project-media/parkinson-band/pdf-page-1.png",
-          "alt": "帕金森手环 计划书第 1 页预览",
-          "caption": "项目计划书第 1 页预览"
-        },
-        {
-          "src": "assets/project-media/parkinson-band/pdf-page-2.png",
-          "alt": "帕金森手环 计划书第 2 页预览",
-          "caption": "项目计划书第 2 页预览"
-        },
-        {
-          "src": "assets/project-media/parkinson-band/pdf-page-3.png",
-          "alt": "帕金森手环 计划书第 3 页预览",
-          "caption": "项目计划书第 3 页预览"
+          "src": "assets/project-media/shared/project-placeholder.svg",
+          "alt": "项目资料整理中占位图",
+          "caption": "项目资料整理中"
         }
       ]
     }
@@ -1560,7 +1546,7 @@ window.PROJECT_DETAIL_CONTENT = {
       "quickView": [
         {
           "label": "这 5 天会做什么",
-          "value": "每天都围绕同一个实物原型推进，先拆问题，再做结构，再看反馈。节奏不是背知识点，而是边搭边改，最后把整套装置调到能讲、能演示、能解释。"
+          "value": "这门课不是先学一堆理论、最后再做一点演示，而是从项目本体出发，一边搭结构，一边看反馈，一边做参数调整。孩子会不断面对真实工程里一定会遇到的问题：为什么结构会晃、为什么信号会有噪声、为…"
         },
         {
           "label": "课程结束能看到什么",
@@ -1568,65 +1554,65 @@ window.PROJECT_DETAIL_CONTENT = {
         },
         {
           "label": "更适合哪类学生",
-          "value": "对机械结构和控制逻辑有兴趣，想看看自己能不能把想法真正做成装置。"
+          "value": "对机械结构和机器人项目有兴趣，但希望作品更有“真实应用”意味的学生。"
         },
         {
           "label": "为什么值得学",
-          "value": "上肢外骨骼最有意思的地方，不是把支架做出来，而是让装置和人的动作配合得顺。这个项目会围绕结构支撑、关节运动、传感反馈和助力联动展开，让孩子理解一套设备怎样在不过度打扰使用者的前提下，…"
+          "value": "外骨骼这类设备很容易让人第一眼被“酷”和“强”吸引，但真正做起来，最难的其实不是外形，而是配合。一个真正有价值的助力系统，不能太重、不能太笨、不能响应太慢，也不能让使用者觉得自己被机…"
         }
       ],
       "sections": [
         {
           "type": "insight",
-          "title": "一套外骨骼，真正难在哪里？",
+          "title": "项目背景：为什么外骨骼最难的是“和人配合”",
           "image": "assets/project-media/upper-limb-exoskeleton/pdf-page-2.png",
           "imageAlt": "上肢外骨骼 计划书内页预览",
           "imageMode": "document",
           "imageCaption": "项目计划书内页预览，点击可放大查看。",
           "paragraphs": [
-            "上肢外骨骼最有意思的地方，不是把支架做出来，而是让装置和人的动作配合得顺。这个项目会围绕结构支撑、关节运动、传感反馈和助力联动展开，让孩子理解一套设备怎样在不过度打扰使用者的前提下，把力传得稳、传得准。",
-            "课程会以轻量化上肢助力原型为主线，带着学生一步步完成结构设计、传动搭建、意图感知和基础助力控制。孩子最后做出来的不只是一个外壳，而是一套能说明“为什么这样设计、为什么这样配合人体”的工程作品。"
+            "外骨骼这类设备很容易让人第一眼被“酷”和“强”吸引，但真正做起来，最难的其实不是外形，而是配合。一个真正有价值的助力系统，不能太重、不能太笨、不能响应太慢，也不能让使用者觉得自己被机器“拖着走”。",
+            "这份课程方案正是从这些真实问题出发。原始项目材料里重点强调了三个核心方向：用 Capstan Drive 绳索传动替代沉重齿轮箱来减轻重量，用电阻应变片去感知使用者的发力意图，再通过控制算法把“想发力”的动作趋势转成可调的辅助输出。这样做的价值，不只是作品更完整，而是孩子能真正理解一套智能设备怎样从“结构”走到“协作”。"
           ],
           "bullets": [
-            "主题具体，孩子做的不是泛泛的“机械装置”，而是一套能解释动作协作逻辑的工程原型。",
-            "机械结构、传感器和控制会一起推进，能很直观地看到“人机协作”是怎么落地的。",
-            "作品展示感强，现场一演示就能看出结构、动作和助力之间的关系。",
-            "理解上肢外骨骼的受力方式、关节配合和贴合逻辑。"
+            "主题很强，一看就不是普通的拼装作品，而是典型的人机协作工程项目。",
+            "结构、传感、控制会同步推进，孩子能直观看到不同模块之间怎样互相影响。",
+            "项目兼具技术深度和社会意义，既能讲清机械原理，也能讲清为什么要做更普惠、更低成本的辅助设备。",
+            "理解上肢外骨骼里结构轻量化、贴合性和传动效率之间的平衡。"
           ]
         },
         {
           "type": "schedule",
           "title": "5 天项目怎么推进",
-          "intro": "每天都围绕同一个实物原型推进，先拆问题，再做结构，再看反馈。节奏不是背知识点，而是边搭边改，最后把整套装置调到能讲、能演示、能解释。",
+          "intro": "这门课不是先学一堆理论、最后再做一点演示，而是从项目本体出发，一边搭结构，一边看反馈，一边做参数调整。孩子会不断面对真实工程里一定会遇到的问题：为什么结构会晃、为什么信号会有噪声、为什么助力过强反而不自然。 这种推进方式的好处是，孩子不会…",
           "days": [
             {
               "day": "Day 1",
-              "title": "场景导入与动作拆解",
-              "detail": "从上肢动作和外骨骼使用场景切入，拆解关节、支架、固定和受力关系。",
-              "output": "完成系统结构图"
+              "title": "场景拆解与结构方案",
+              "detail": "从使用场景、受力点和自由度切入，理解外骨骼系统的基本分层，并完成结构方案草图。",
+              "output": "完成系统结构图与关键部件思路"
             },
             {
               "day": "Day 2",
-              "title": "结构方案与机械装配",
-              "detail": "围绕支撑件、联动结构或绳索传动完成机械方案搭建。",
-              "output": "完成核心结构搭建"
+              "title": "传动结构与支架建模",
+              "detail": "学习 Capstan Drive 绳索传动的基本思路，完成人体工学支架和关键零件的建模设计。",
+              "output": "完成核心结构建模"
             },
             {
               "day": "Day 3",
-              "title": "传感输入与意图判断",
-              "detail": "理解基础传感器采集和动作意图判断，整理输入到输出的逻辑链。",
-              "output": "形成感知链路说明"
+              "title": "意图感知与信号采集",
+              "detail": "学习电阻应变片、惠斯通电桥和基础滤波逻辑，搭建意图感知链路。",
+              "output": "完成传感采集链路"
             },
             {
               "day": "Day 4",
-              "title": "助力控制与人机联调",
-              "detail": "完成助力控制、参数调试和响应节奏优化，让装置更像“会配合人”。",
-              "output": "原型具备基础助力展示"
+              "title": "助力控制与系统联调",
+              "detail": "建立“应变强度 - 电机扭矩”的映射关系，并进行 PID 调参与装置联调。",
+              "output": "原型具备基础助力演示能力"
             },
             {
               "day": "Day 5",
-              "title": "展示优化与文档整理",
-              "detail": "整理使用边界、展示话术和项目文档，把作品讲明白。",
+              "title": "展示优化与成果整理",
+              "detail": "优化演示流程，整理系统说明、展示话术和项目文档。",
               "output": "实物原型 + 项目说明文档"
             }
           ],
@@ -1638,23 +1624,23 @@ window.PROJECT_DETAIL_CONTENT = {
         {
           "type": "cards",
           "title": "核心工具与方法",
-          "intro": "| 模块 | 内容 | | --- | --- | | 结构方案 | 支撑骨架 / 联动机构 / 关节贴合 / 人体固定设计 | | 控制逻辑 | 基础闭环控制 / 动作识别 / 助力反馈 / 调参优化 | | 展示表达 | 动作演示 /…",
+          "intro": "| 模块 | 内容 | | --- | --- | | 结构设计 | Fusion 360 建模 / 支架设计 / 绳索导向 / 轻量化结构 | | 感知系统 | 电阻应变片 / 惠斯通电桥 / 差分放大 / 基础滤波 | | 控制逻辑…",
           "cards": [
             {
-              "title": "结构方案",
-              "text": "支撑骨架 / 联动机构 / 关节贴合 / 人体固定设计"
+              "title": "结构设计",
+              "text": "Fusion 360 建模 / 支架设计 / 绳索导向 / 轻量化结构"
+            },
+            {
+              "title": "感知系统",
+              "text": "电阻应变片 / 惠斯通电桥 / 差分放大 / 基础滤波"
             },
             {
               "title": "控制逻辑",
-              "text": "基础闭环控制 / 动作识别 / 助力反馈 / 调参优化"
+              "text": "嵌入式平台 / 电机驱动 / PID 调参 / 人机协作联调"
             },
             {
-              "title": "展示表达",
-              "text": "动作演示 / 受力说明 / 使用边界 / 工程话术"
-            },
-            {
-              "title": "学科连接",
-              "text": "机械工程 / 电子工程 / 生物医学 / 人机交互"
+              "title": "项目重点",
+              "text": "Capstan Drive / 意图检测 / 低成本助力方案 / 工程展示"
             }
           ]
         },
@@ -1664,15 +1650,15 @@ window.PROJECT_DETAIL_CONTENT = {
           "cards": [
             {
               "title": "实物原型",
-              "text": "一个能演示抬臂、支撑或助力效果的装置，孩子可以边操作边讲解。"
+              "text": "一套能够演示助力逻辑的上肢外骨骼原型，能展示结构、传感和控制如何配合。"
             },
             {
               "title": "项目说明文档",
-              "text": "一份写清楚结构思路、控制逻辑和展示边界的项目说明文档。"
+              "text": "一份写清楚设计思路、核心模块、调试过程和展示边界的项目说明文档。"
             },
             {
               "title": "展示表达能力",
-              "text": "孩子能把为什么这样设计、怎么工作、适合什么场景讲明白。"
+              "text": "孩子能把为什么这样设计、为什么这样传动、如何判断动作意图讲清楚。"
             }
           ]
         },
@@ -1680,15 +1666,15 @@ window.PROJECT_DETAIL_CONTENT = {
           "type": "fit",
           "title": "什么样的学生更适合报名",
           "goodFit": [
-            "对机械结构和控制逻辑有兴趣，想看看自己能不能把想法真正做成装置。",
-            "喜欢动手拆解、调试和反复试效果，不排斥工程上的小麻烦。",
-            "想做一个现场一演示就能讲清楚的项目，而不是停留在概念层面。",
-            "对“设备怎样配合人体动作”这类问题感到好奇。"
+            "对机械结构和机器人项目有兴趣，但希望作品更有“真实应用”意味的学生。",
+            "喜欢动手调试，不排斥面对噪声、参数和联调问题。",
+            "希望做一个既能展示硬件，也能体现工程思维深度的项目。",
+            "对“技术怎样帮助真实人群”这类问题本身就有兴趣。"
           ],
           "notFit": [
-            "无法连续参加完整项目周期，或者不愿意花时间调试。",
-            "只想听讲，不想碰结构、接线或参数调整。",
-            "对机械装置和工程类动手完全没有兴趣。"
+            "只想快速拼出结果，不愿意做反复调试和参数优化。",
+            "对硬件结构、接线和控制完全没有兴趣。",
+            "更偏好纯软件、纯界面类项目，不愿意处理工程上的细节问题。"
           ]
         },
         {
@@ -1696,20 +1682,16 @@ window.PROJECT_DETAIL_CONTENT = {
           "title": "家长常见问题",
           "items": [
             {
-              "q": "这个项目有没有基础要求？",
-              "a": "适合愿意理解结构与控制的学生。课程会提供项目化引导，但孩子需要愿意主动参与、动手和表达。"
+              "q": "这个项目最后能看到什么？",
+              "a": "课程结束时会形成可展示的原型成果和一份项目说明文档。"
             },
             {
-              "q": "五天结束后，家长能实际看到什么？",
-              "a": "课程结束时，学生会形成 实物原型 + 项目说明文档，并能清楚讲述这套装置是怎么配合人体动作工作的。"
+              "q": "孩子没有太多基础可以参加吗？",
+              "a": "是否适合主要看项目要求和孩子的投入意愿，页面右侧会保留基础要求和适合年级。"
             },
             {
-              "q": "这个项目会做医疗功能吗？",
-              "a": "不会。课程聚焦工程原型和人机协作逻辑，不做医疗承诺，也不把项目包装成医疗设备。"
-            },
-            {
-              "q": "如果孩子做完后还想继续深化，可以吗？",
-              "a": "可以。当前版本先帮助学生完成第一阶段成果，后续可以继续优化结构、传感和控制表现。"
+              "q": "做完后还能继续深化吗？",
+              "a": "可以。网页和 PDF 都会保留后续继续升级、补功能和延展展示的空间。"
             }
           ]
         }
@@ -2265,7 +2247,7 @@ window.PROJECT_DETAIL_CONTENT = {
     "detailPage": {
       "kicker": "Project Detail",
       "heroMode": "document",
-      "heroImage": "assets/project-media/smart-planter/pdf-page-1.png",
+      "heroImage": "assets/project-media/shared/project-placeholder.svg",
       "heroCaption": "项目计划书第一页预览，点击可放大查看。",
       "quickView": [
         {
@@ -2289,7 +2271,7 @@ window.PROJECT_DETAIL_CONTENT = {
         {
           "type": "insight",
           "title": "项目背景：为什么孩子会一下子理解这个项目？",
-          "image": "assets/project-media/smart-planter/pdf-page-2.png",
+          "image": "assets/project-media/shared/project-placeholder.svg",
           "imageAlt": "智能花盆 计划书内页预览",
           "imageMode": "document",
           "imageCaption": "项目计划书内页预览，点击可放大查看。",
@@ -2339,11 +2321,7 @@ window.PROJECT_DETAIL_CONTENT = {
               "detail": "处理数据联通、功能调试和展示材料，让作品能够完整讲述。",
               "output": "实物原型 + 项目说明文档"
             }
-          ],
-          "image": "assets/project-media/smart-planter/pdf-page-3.png",
-          "imageAlt": "智能花盆 课程安排资料页预览",
-          "imageMode": "document",
-          "imageCaption": "课程安排资料页预览，点击可放大查看。"
+          ]
         },
         {
           "type": "cards",
@@ -2426,19 +2404,9 @@ window.PROJECT_DETAIL_CONTENT = {
       ],
       "gallery": [
         {
-          "src": "assets/project-media/smart-planter/pdf-page-1.png",
-          "alt": "智能花盆 计划书第 1 页预览",
-          "caption": "项目计划书第 1 页预览"
-        },
-        {
-          "src": "assets/project-media/smart-planter/pdf-page-2.png",
-          "alt": "智能花盆 计划书第 2 页预览",
-          "caption": "项目计划书第 2 页预览"
-        },
-        {
-          "src": "assets/project-media/smart-planter/pdf-page-3.png",
-          "alt": "智能花盆 计划书第 3 页预览",
-          "caption": "项目计划书第 3 页预览"
+          "src": "assets/project-media/shared/project-placeholder.svg",
+          "alt": "项目资料整理中占位图",
+          "caption": "项目资料整理中"
         }
       ]
     }
@@ -2447,7 +2415,7 @@ window.PROJECT_DETAIL_CONTENT = {
     "detailPage": {
       "kicker": "Project Detail",
       "heroMode": "document",
-      "heroImage": "assets/project-media/smart-pillbox/pdf-page-1.png",
+      "heroImage": "assets/project-media/shared/project-placeholder.svg",
       "heroCaption": "项目计划书第一页预览，点击可放大查看。",
       "quickView": [
         {
@@ -2471,7 +2439,7 @@ window.PROJECT_DETAIL_CONTENT = {
         {
           "type": "insight",
           "title": "项目背景：为什么这个项目一看就像产品？",
-          "image": "assets/project-media/smart-pillbox/pdf-page-2.png",
+          "image": "assets/project-media/shared/project-placeholder.svg",
           "imageAlt": "智能药盒 计划书内页预览",
           "imageMode": "document",
           "imageCaption": "项目计划书内页预览，点击可放大查看。",
@@ -2521,11 +2489,7 @@ window.PROJECT_DETAIL_CONTENT = {
               "detail": "整理使用步骤、演示话术和项目文档。",
               "output": "实物原型 + 项目说明文档"
             }
-          ],
-          "image": "assets/project-media/smart-pillbox/pdf-page-3.png",
-          "imageAlt": "智能药盒 课程安排资料页预览",
-          "imageMode": "document",
-          "imageCaption": "课程安排资料页预览，点击可放大查看。"
+          ]
         },
         {
           "type": "cards",
@@ -2608,19 +2572,9 @@ window.PROJECT_DETAIL_CONTENT = {
       ],
       "gallery": [
         {
-          "src": "assets/project-media/smart-pillbox/pdf-page-1.png",
-          "alt": "智能药盒 计划书第 1 页预览",
-          "caption": "项目计划书第 1 页预览"
-        },
-        {
-          "src": "assets/project-media/smart-pillbox/pdf-page-2.png",
-          "alt": "智能药盒 计划书第 2 页预览",
-          "caption": "项目计划书第 2 页预览"
-        },
-        {
-          "src": "assets/project-media/smart-pillbox/pdf-page-3.png",
-          "alt": "智能药盒 计划书第 3 页预览",
-          "caption": "项目计划书第 3 页预览"
+          "src": "assets/project-media/shared/project-placeholder.svg",
+          "alt": "项目资料整理中占位图",
+          "caption": "项目资料整理中"
         }
       ]
     }
@@ -2806,6 +2760,544 @@ window.PROJECT_DETAIL_CONTENT = {
         {
           "src": "assets/project-media/desktop-pet/pdf-page-3.png",
           "alt": "智能桌宠 计划书第 3 页预览",
+          "caption": "项目计划书第 3 页预览"
+        }
+      ]
+    }
+  },
+  "ai-future-player-starter": {
+    "detailPage": {
+      "kicker": "Project Detail",
+      "heroMode": "document",
+      "heroImage": "assets/project-media/ai-future-player-starter/pdf-page-1.png",
+      "heroCaption": "项目计划书第一页预览，点击可放大查看。",
+      "quickView": [
+        {
+          "label": "这 5 天会做什么",
+          "value": "课程采用项目制推进，不是单独讲一堆工具功能，而是让孩子围绕一个可展示的小项目边学边做。每一天都会有明确的小成果，孩子能不断看到“我今天又做出来了什么”，保持参与感和完成感。 整体节奏…"
+        },
+        {
+          "label": "课程结束能看到什么",
+          "value": "软件原型 + 项目说明文档"
+        },
+        {
+          "label": "更适合哪类学生",
+          "value": "对 AI 很好奇，但还没有系统学过的孩子。"
+        },
+        {
+          "label": "为什么值得学",
+          "value": "现在的孩子已经生活在 AI 无处不在的环境里。聊天、搜资料、做图片、写内容，很多环节都已经出现了 AI 工具。但大多数孩子对 AI 的接触还停留在“用一下”“试试看”，很少真正知道怎…"
+        }
+      ],
+      "sections": [
+        {
+          "type": "insight",
+          "title": "项目背景：为什么现在就该学会“用 AI 做东西”",
+          "image": "assets/project-media/ai-future-player-starter/pdf-page-2.png",
+          "imageAlt": "AI未来玩家启蒙计划 计划书内页预览",
+          "imageMode": "document",
+          "imageCaption": "项目计划书内页预览，点击可放大查看。",
+          "paragraphs": [
+            "现在的孩子已经生活在 AI 无处不在的环境里。聊天、搜资料、做图片、写内容，很多环节都已经出现了 AI 工具。但大多数孩子对 AI 的接触还停留在“用一下”“试试看”，很少真正知道怎样把 AI 用成自己的工具。",
+            "这门课的价值就在于，它不把 AI 当作一个神秘黑箱，也不要求孩子一上来就学复杂编程，而是通过 Coze Agent、TRAE 和 AI 图片生成这些更直观的工具，帮助孩子建立一种更健康、更主动的关系：不是被 AI 推着走，而是学会提需求、做判断、改结果、完成作品。"
+          ],
+          "bullets": [
+            "对零基础孩子友好，不需要先有编程底子，也能真正做出作品。",
+            "工具足够新，也足够实用，孩子学完以后能继续在别的学习和创作场景里用起来。",
+            "成果非常具体，家长能清楚看到孩子做了什么，而不是只听到一些抽象概念。",
+            "学会向 AI 清楚表达需求，而不是随便问一句就等答案。"
+          ]
+        },
+        {
+          "type": "schedule",
+          "title": "5 天项目怎么推进",
+          "intro": "课程采用项目制推进，不是单独讲一堆工具功能，而是让孩子围绕一个可展示的小项目边学边做。每一天都会有明确的小成果，孩子能不断看到“我今天又做出来了什么”，保持参与感和完成感。 整体节奏会控制得更适合低年级学生：先理解工具能做什么，再动手试，…",
+          "days": [
+            {
+              "day": "Day 1",
+              "title": "认识 AI 与高效提问",
+              "detail": "理解 AI 工具的基本工作方式，学习怎样向 AI 说清需求，建立“提问 - 查看结果 - 继续优化”的基础习惯。",
+              "output": "完成个人 AI 使用小任务"
+            },
+            {
+              "day": "Day 2",
+              "title": "Coze Agent 入门与搭建",
+              "detail": "用 Coze 搭建一个能完成简单任务的 AI Agent，例如学习助手、兴趣问答助手或提醒小助手。",
+              "output": "完成 Coze Agent 第一版"
+            },
+            {
+              "day": "Day 3",
+              "title": "TRAE AI编程实践",
+              "detail": "借助 TRAE 体验 AI 编程，完成一个简单网页、小工具或互动页面的基础结构。",
+              "output": "完成轻量软件原型"
+            },
+            {
+              "day": "Day 4",
+              "title": "AI图片生成与视觉完善",
+              "detail": "使用 AI 图片生成工具制作角色、海报或页面视觉素材，完善作品的表达效果。",
+              "output": "完成图片素材与页面美化"
+            },
+            {
+              "day": "Day 5",
+              "title": "整合展示与成果表达",
+              "detail": "整合 Agent、网页和图片内容，整理项目说明，完成最终展示。",
+              "output": "软件原型 + 项目说明文档"
+            }
+          ],
+          "image": "assets/project-media/ai-future-player-starter/pdf-page-3.png",
+          "imageAlt": "AI未来玩家启蒙计划 课程安排资料页预览",
+          "imageMode": "document",
+          "imageCaption": "课程安排资料页预览，点击可放大查看。"
+        },
+        {
+          "type": "cards",
+          "title": "核心工具与方法",
+          "intro": "| 模块 | 内容 | | --- | --- | | AI Agent | Coze Agent / 基础工作流 / 对话逻辑 / 小任务设计 | | AI编程 | TRAE / 页面搭建 / 交互小功能 / 结果调试 | | 视觉表达…",
+          "cards": [
+            {
+              "title": "AI Agent",
+              "text": "Coze Agent / 基础工作流 / 对话逻辑 / 小任务设计"
+            },
+            {
+              "title": "AI编程",
+              "text": "TRAE / 页面搭建 / 交互小功能 / 结果调试"
+            },
+            {
+              "title": "视觉表达",
+              "text": "AI图片生成 / 角色设计 / 海报与页面素材制作"
+            },
+            {
+              "title": "学习方法",
+              "text": "Prompt 设计 / 结果判断 / 迭代修改 / 项目整合"
+            }
+          ]
+        },
+        {
+          "type": "results",
+          "title": "课程结束后，家长能直接看到什么",
+          "cards": [
+            {
+              "title": "软件原型",
+              "text": "一个由孩子自己完成的轻量网页或互动小工具，能现场展示。"
+            },
+            {
+              "title": "AI Agent",
+              "text": "一个可以在 Coze 中实际运行的基础 Agent，能完成简单对话或任务。"
+            },
+            {
+              "title": "图片作品",
+              "text": "孩子用 AI 图片生成工具做出的角色、海报或页面视觉素材。"
+            },
+            {
+              "title": "项目说明文档",
+              "text": "一份写清楚项目想法、使用工具和成果展示方式的项目说明文档。"
+            }
+          ]
+        },
+        {
+          "type": "fit",
+          "title": "什么样的学生更适合报名",
+          "goodFit": [
+            "对 AI 很好奇，但还没有系统学过的孩子。",
+            "喜欢创意表达，希望把自己的想法做成看得见的作品。",
+            "对聊天助手、网页、小工具、图片创作这类内容有兴趣。",
+            "家长希望孩子先建立正确的 AI 使用方式，而不是只会“随便问问”。"
+          ],
+          "notFit": [
+            "完全不愿意动手操作，只想被动看演示。",
+            "对数字工具和创作表达兴趣很低。",
+            "期待课程主要是传统编程语法训练，而不是 AI 工具启蒙与项目实践。"
+          ]
+        },
+        {
+          "type": "faq",
+          "title": "家长常见问题",
+          "items": [
+            {
+              "q": "这个项目最后能看到什么？",
+              "a": "课程结束时会形成可展示的原型成果和一份项目说明文档。"
+            },
+            {
+              "q": "孩子没有太多基础可以参加吗？",
+              "a": "是否适合主要看项目要求和孩子的投入意愿，页面右侧会保留基础要求和适合年级。"
+            },
+            {
+              "q": "做完后还能继续深化吗？",
+              "a": "可以。网页和 PDF 都会保留后续继续升级、补功能和延展展示的空间。"
+            }
+          ]
+        }
+      ],
+      "gallery": [
+        {
+          "src": "assets/project-media/ai-future-player-starter/pdf-page-1.png",
+          "alt": "AI未来玩家启蒙计划 计划书第 1 页预览",
+          "caption": "项目计划书第 1 页预览"
+        },
+        {
+          "src": "assets/project-media/ai-future-player-starter/pdf-page-2.png",
+          "alt": "AI未来玩家启蒙计划 计划书第 2 页预览",
+          "caption": "项目计划书第 2 页预览"
+        },
+        {
+          "src": "assets/project-media/ai-future-player-starter/pdf-page-3.png",
+          "alt": "AI未来玩家启蒙计划 计划书第 3 页预览",
+          "caption": "项目计划书第 3 页预览"
+        }
+      ]
+    }
+  },
+  "global-interstellar-routing": {
+    "detailPage": {
+      "kicker": "Project Detail",
+      "heroMode": "document",
+      "heroImage": "assets/project-media/global-interstellar-routing/pdf-page-1.png",
+      "heroCaption": "项目计划书第一页预览，点击可放大查看。",
+      "quickView": [
+        {
+          "label": "这 5 天会做什么",
+          "value": "这门课不会把数学、后端、前端分成完全割裂的三段去讲，而是围绕“一个系统怎么从概念走到演示”来推进。孩子先理解问题本身，再学会怎样建模，接着把模型装进程序，最后做出可视化展示。 因此课…"
+        },
+        {
+          "label": "课程结束能看到什么",
+          "value": "软件原型 + 项目说明文档"
+        },
+        {
+          "label": "更适合哪类学生",
+          "value": "对航天、卫星、网络系统这些题目天然有兴趣的学生。"
+        },
+        {
+          "label": "为什么值得学",
+          "value": "地面网络的很多路由问题，默认节点位置相对稳定，链路变化也没有那么快。但低轨卫星网络完全不同。卫星持续高速飞行，链路会随着位置变化不断建立和断开，如果还用“静态最短路”的思维，很容易出…"
+        }
+      ],
+      "sections": [
+        {
+          "type": "insight",
+          "title": "项目背景：为什么卫星一动，路由就不能照搬地面网络",
+          "image": "assets/project-media/global-interstellar-routing/pdf-page-2.png",
+          "imageAlt": "全球星间路由优化系统 计划书内页预览",
+          "imageMode": "document",
+          "imageCaption": "项目计划书内页预览，点击可放大查看。",
+          "paragraphs": [
+            "地面网络的很多路由问题，默认节点位置相对稳定，链路变化也没有那么快。但低轨卫星网络完全不同。卫星持续高速飞行，链路会随着位置变化不断建立和断开，如果还用“静态最短路”的思维，很容易出现路径刚算完就失效、时延波动大、链路拥塞难预测的问题。",
+            "这份原始计划书把问题抓得很准：它用“时间片序列图”或者时间扩展图的方式，把会变化的网络拓扑拆成可计算的时空图，再在这个图里寻找真正适合当前时刻的路径。这样一来，原本非常抽象的航天网络问题，就能被孩子看懂、算清楚、做出来。"
+          ],
+          "bullets": [
+            "题目很新，和地面网络、普通前端项目完全不是一个层次的问题意识。",
+            "它既有数学建模深度，又有很强的可视化展示效果，家长和老师一看就能明白项目不简单。",
+            "孩子会经历“抽象问题 - 建立模型 - 写出系统 - 做出演示”的完整链路，很适合培养系统思维。",
+            "学会把现实中的复杂系统抽象成数学模型。"
+          ]
+        },
+        {
+          "type": "schedule",
+          "title": "5 天项目怎么推进",
+          "intro": "这门课不会把数学、后端、前端分成完全割裂的三段去讲，而是围绕“一个系统怎么从概念走到演示”来推进。孩子先理解问题本身，再学会怎样建模，接着把模型装进程序，最后做出可视化展示。 因此课程重点不只是“会写代码”，而是“会用代码表达复杂系统”。",
+          "days": [
+            {
+              "day": "Day 1",
+              "title": "轨道、链路与动态图问题理解",
+              "detail": "认识低轨卫星网络的动态特性，理解 TLE 数据、轨道计算、可视链路和传播时延这些基础概念。",
+              "output": "完成问题拆解与基础数据认知"
+            },
+            {
+              "day": "Day 2",
+              "title": "星座拓扑离散化与路径建模",
+              "detail": "把连续变化的卫星网络拆成时间片，构建时空图结构，并整理路径搜索所需的权重与状态定义。",
+              "output": "完成动态图数据结构与路径模型"
+            },
+            {
+              "day": "Day 3",
+              "title": "路由算法与 Flask 后端",
+              "detail": "使用 Python、NetworkX 和 Flask 搭建后端核心流程，完成路径计算、故障重路由和基础接口设计。",
+              "output": "完成核心算法接口"
+            },
+            {
+              "day": "Day 4",
+              "title": "三维地球可视化与交互",
+              "detail": "在前端构建卫星、链路和路径高亮展示，完成时间轴、信息面板和查询交互。",
+              "output": "完成可演示的前端场景"
+            },
+            {
+              "day": "Day 5",
+              "title": "全链路联调与展示优化",
+              "detail": "联调前后端数据，优化演示流程，整理项目说明文档和展示话术。",
+              "output": "软件原型 + 项目说明文档"
+            }
+          ],
+          "image": "assets/project-media/global-interstellar-routing/pdf-page-3.png",
+          "imageAlt": "全球星间路由优化系统 课程安排资料页预览",
+          "imageMode": "document",
+          "imageCaption": "课程安排资料页预览，点击可放大查看。"
+        },
+        {
+          "type": "cards",
+          "title": "核心工具与方法",
+          "intro": "| 模块 | 内容 | | --- | --- | | 数学与建模 | 动态图论 / 时间扩展图 / 时空最短路径 / 路由优化 | | 后端能力 | Python / Flask / NetworkX / 路由求解接口 | | 数据与轨…",
+          "cards": [
+            {
+              "title": "数学与建模",
+              "text": "动态图论 / 时间扩展图 / 时空最短路径 / 路由优化"
+            },
+            {
+              "title": "后端能力",
+              "text": "Python / Flask / NetworkX / 路由求解接口"
+            },
+            {
+              "title": "数据与轨道",
+              "text": "TLE 数据 / Skyfield / 卫星轨道预报 / 链路状态生成"
+            },
+            {
+              "title": "前端展示",
+              "text": "Cesium.js / 三维地球 / 时间轴交互 / 路由高亮"
+            }
+          ]
+        },
+        {
+          "type": "results",
+          "title": "课程结束后，家长能直接看到什么",
+          "cards": [
+            {
+              "title": "软件原型",
+              "text": "一套可运行的星间路由可视化系统，能演示卫星位置变化、链路变化和路径选择。"
+            },
+            {
+              "title": "项目说明文档",
+              "text": "一份写清楚问题背景、建模逻辑、核心算法和展示方式的项目说明文档。"
+            },
+            {
+              "title": "展示表达能力",
+              "text": "孩子能说明为什么这个问题不能只靠静态最短路，以及系统是如何动态做决策的。"
+            }
+          ]
+        },
+        {
+          "type": "fit",
+          "title": "什么样的学生更适合报名",
+          "goodFit": [
+            "对航天、卫星、网络系统这些题目天然有兴趣的学生。",
+            "喜欢“先搞清楚问题，再写系统”而不是只做页面效果。",
+            "想做一个明显区别于普通网站项目、带有数学和系统深度的作品。",
+            "对图论、建模、仿真和可视化结合的方向感到好奇。"
+          ],
+          "notFit": [
+            "只想快速做一个界面，不想理解模型和算法逻辑。",
+            "对航天题材和系统问题本身没有兴趣。",
+            "对数学抽象和复杂系统完全排斥，只偏好很轻量的入门项目。"
+          ]
+        },
+        {
+          "type": "faq",
+          "title": "家长常见问题",
+          "items": [
+            {
+              "q": "这个项目最后能看到什么？",
+              "a": "课程结束时会形成可展示的原型成果和一份项目说明文档。"
+            },
+            {
+              "q": "孩子没有太多基础可以参加吗？",
+              "a": "是否适合主要看项目要求和孩子的投入意愿，页面右侧会保留基础要求和适合年级。"
+            },
+            {
+              "q": "做完后还能继续深化吗？",
+              "a": "可以。网页和 PDF 都会保留后续继续升级、补功能和延展展示的空间。"
+            }
+          ]
+        }
+      ],
+      "gallery": [
+        {
+          "src": "assets/project-media/global-interstellar-routing/pdf-page-1.png",
+          "alt": "全球星间路由优化系统 计划书第 1 页预览",
+          "caption": "项目计划书第 1 页预览"
+        },
+        {
+          "src": "assets/project-media/global-interstellar-routing/pdf-page-2.png",
+          "alt": "全球星间路由优化系统 计划书第 2 页预览",
+          "caption": "项目计划书第 2 页预览"
+        },
+        {
+          "src": "assets/project-media/global-interstellar-routing/pdf-page-3.png",
+          "alt": "全球星间路由优化系统 计划书第 3 页预览",
+          "caption": "项目计划书第 3 页预览"
+        }
+      ]
+    }
+  },
+  "economic-cycle-reconstruction": {
+    "detailPage": {
+      "kicker": "Project Detail",
+      "heroMode": "document",
+      "heroImage": "assets/project-media/economic-cycle-reconstruction/pdf-page-1.png",
+      "heroCaption": "项目计划书第一页预览，点击可放大查看。",
+      "quickView": [
+        {
+          "label": "这 5 天会做什么",
+          "value": "这门课不会把公式和代码完全拆开讲。孩子会一边理解模型，一边验证公式，一边看到这些公式怎样真正出现在软件系统里。这样做的目的，是让数学不只是纸面推导，而是成为系统里真的在起作用的部分。…"
+        },
+        {
+          "label": "课程结束能看到什么",
+          "value": "软件原型 + 项目说明文档"
+        },
+        {
+          "label": "更适合哪类学生",
+          "value": "对数学和现实问题结合这件事本身感兴趣的学生。"
+        },
+        {
+          "label": "为什么值得学",
+          "value": "现实里的宏观经济数据常常不干净，也不完整。很多关键状态本身不可直接观测，而且不同指标之间还存在滞后、噪声和非线性反馈。如果只盯着一两条曲线，很容易看见结果，却看不清系统内部的动态过程。"
+        }
+      ],
+      "sections": [
+        {
+          "type": "insight",
+          "title": "项目背景：为什么经济系统不能只看几条静态曲线",
+          "image": "assets/project-media/economic-cycle-reconstruction/pdf-page-2.png",
+          "imageAlt": "经济周期重构系统 计划书内页预览",
+          "imageMode": "document",
+          "imageCaption": "项目计划书内页预览，点击可放大查看。",
+          "paragraphs": [
+            "现实里的宏观经济数据常常不干净，也不完整。很多关键状态本身不可直接观测，而且不同指标之间还存在滞后、噪声和非线性反馈。如果只盯着一两条曲线，很容易看见结果，却看不清系统内部的动态过程。",
+            "原始项目材料的价值就在于，它不是停留在“把数据画出来”，而是试图用随机动力学模型和最优状态估计，把经济系统中那些不容易直接观察的变化过程重构出来。这样一来，孩子面对的不是简单的数据展示题，而是一个“怎样从杂乱现实里提炼结构”的高质量建模项目。"
+          ],
+          "bullets": [
+            "题目很有辨识度，明显区别于普通的数据看板或可视化页面。",
+            "项目把数学推导、算法实现和交互展示完整串起来，能训练真正的系统能力。",
+            "家长很容易感受到项目的高级感，因为它讨论的是“如何从不完整信息中做判断”这类更接近真实研究和分析工作的能力。",
+            "学会把现实中的不确定系统抽象成状态空间模型。"
+          ]
+        },
+        {
+          "type": "schedule",
+          "title": "5 天项目怎么推进",
+          "intro": "这门课不会把公式和代码完全拆开讲。孩子会一边理解模型，一边验证公式，一边看到这些公式怎样真正出现在软件系统里。这样做的目的，是让数学不只是纸面推导，而是成为系统里真的在起作用的部分。 因此课程会特别强调“能解释”。孩子不仅要知道算法跑出来…",
+          "days": [
+            {
+              "day": "Day 1",
+              "title": "问题理解与随机动力学建模",
+              "detail": "理解宏观数据中的噪声、潜变量和周期问题，建立基础的随机动力学视角，明确模型到底在描述什么。",
+              "output": "完成问题拆解与模型框架"
+            },
+            {
+              "day": "Day 2",
+              "title": "连续模型离散化与公式验证",
+              "detail": "将连续时间模型转成计算机可运行的迭代形式，并通过符号推导或代码验证模型逻辑。",
+              "output": "完成离散化模型与验证脚本"
+            },
+            {
+              "day": "Day 3",
+              "title": "状态估计与滤波算法实现",
+              "detail": "梳理贝叶斯滤波、卡尔曼滤波和非线性扩展处理思路，完成核心状态估计流程。",
+              "output": "完成估计核心模块"
+            },
+            {
+              "day": "Day 4",
+              "title": "平滑重构与可视化表达",
+              "detail": "对历史轨迹进行平滑修正，整理置信区间、波动轨迹和参数变化的展示方式。",
+              "output": "完成主要可视化页面"
+            },
+            {
+              "day": "Day 5",
+              "title": "系统联调与成果呈现",
+              "detail": "打通参数调节、结果更新和展示逻辑，整理项目说明文档和最终展示话术。",
+              "output": "软件原型 + 项目说明文档"
+            }
+          ],
+          "image": "assets/project-media/economic-cycle-reconstruction/pdf-page-3.png",
+          "imageAlt": "经济周期重构系统 课程安排资料页预览",
+          "imageMode": "document",
+          "imageCaption": "课程安排资料页预览，点击可放大查看。"
+        },
+        {
+          "type": "cards",
+          "title": "核心工具与方法",
+          "intro": "| 模块 | 内容 | | --- | --- | | 数学与统计 | 随机微分方程 / 状态空间模型 / 卡尔曼滤波 / 平滑估计 | | 科学计算 | Python / NumPy / SymPy / 参数求解与验证 | | 可视化表…",
+          "cards": [
+            {
+              "title": "数学与统计",
+              "text": "随机微分方程 / 状态空间模型 / 卡尔曼滤波 / 平滑估计"
+            },
+            {
+              "title": "科学计算",
+              "text": "Python / NumPy / SymPy / 参数求解与验证"
+            },
+            {
+              "title": "可视化表达",
+              "text": "Plotly / ECharts / 置信区间 / 路径云图 / 仪表盘"
+            },
+            {
+              "title": "系统搭建",
+              "text": "Flask / 数据接口 / 交互参数调整 / 动态结果更新"
+            }
+          ]
+        },
+        {
+          "type": "results",
+          "title": "课程结束后，家长能直接看到什么",
+          "cards": [
+            {
+              "title": "软件原型",
+              "text": "一套可运行的经济周期重构系统，能展示真实数据、估计状态和不确定性变化。"
+            },
+            {
+              "title": "项目说明文档",
+              "text": "一份写清楚模型思路、算法流程、展示逻辑和主要结论的项目说明文档。"
+            },
+            {
+              "title": "展示表达能力",
+              "text": "孩子能解释为什么经济周期不能只看静态指标，以及系统是如何重构潜在状态的。"
+            }
+          ]
+        },
+        {
+          "type": "fit",
+          "title": "什么样的学生更适合报名",
+          "goodFit": [
+            "对数学和现实问题结合这件事本身感兴趣的学生。",
+            "喜欢从复杂数据里找结构，而不是只做简单结果展示。",
+            "想做一个兼具理论深度和展示效果的软件类项目。",
+            "对经济、金融、政策分析或系统建模方向有初步好奇。"
+          ],
+          "notFit": [
+            "只想做界面效果，不愿意理解模型或估计逻辑。",
+            "对数学抽象和不确定系统完全没有兴趣。",
+            "希望项目极度直观、极度轻量，不愿意处理较强的概念密度。"
+          ]
+        },
+        {
+          "type": "faq",
+          "title": "家长常见问题",
+          "items": [
+            {
+              "q": "这个项目最后能看到什么？",
+              "a": "课程结束时会形成可展示的原型成果和一份项目说明文档。"
+            },
+            {
+              "q": "孩子没有太多基础可以参加吗？",
+              "a": "是否适合主要看项目要求和孩子的投入意愿，页面右侧会保留基础要求和适合年级。"
+            },
+            {
+              "q": "做完后还能继续深化吗？",
+              "a": "可以。网页和 PDF 都会保留后续继续升级、补功能和延展展示的空间。"
+            }
+          ]
+        }
+      ],
+      "gallery": [
+        {
+          "src": "assets/project-media/economic-cycle-reconstruction/pdf-page-1.png",
+          "alt": "经济周期重构系统 计划书第 1 页预览",
+          "caption": "项目计划书第 1 页预览"
+        },
+        {
+          "src": "assets/project-media/economic-cycle-reconstruction/pdf-page-2.png",
+          "alt": "经济周期重构系统 计划书第 2 页预览",
+          "caption": "项目计划书第 2 页预览"
+        },
+        {
+          "src": "assets/project-media/economic-cycle-reconstruction/pdf-page-3.png",
+          "alt": "经济周期重构系统 计划书第 3 页预览",
           "caption": "项目计划书第 3 页预览"
         }
       ]

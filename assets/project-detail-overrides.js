@@ -54,7 +54,10 @@
     ["humanoid-robot", "人型机器人"],
     ["smart-planter", "智能花盆"],
     ["smart-pillbox", "智能药盒"],
-    ["desktop-pet", "智能桌宠"]
+    ["desktop-pet", "智能桌宠"],
+    ["ai-future-player-starter", "AI未来玩家启蒙计划"],
+    ["global-interstellar-routing", "全球星间路由优化系统"],
+    ["economic-cycle-reconstruction", "经济周期重构系统"]
   ].forEach(([slug, name]) => applyPosterHero(slug, name));
 
   setVisualFrames("vibe-coding-advanced", [
@@ -352,11 +355,11 @@
   const placeholderPoster = "assets/project-media/shared/project-placeholder.svg";
   setVisualFrames("ai-future-player-starter", [
     {
-      src: placeholderPoster,
-      alt: "AI未来玩家启蒙计划 项目海报占位图",
+      src: "assets/project-media/ai-future-player-starter/poster.jpg",
+      alt: "AI未来玩家启蒙计划 项目海报",
       title: "项目海报",
       caption: "AI未来玩家启蒙计划 项目海报",
-      description: "当前先用统一海报位承接项目标题，后续可替换成正式宣传海报。"
+      description: "项目海报先说明这是一个面向低年级学生的 AI 工具启蒙与创意实践项目。"
     },
     {
       src: "assets/project-media/ai-future-player-starter/scene-reference.jpg",
@@ -400,11 +403,11 @@
 
   setVisualFrames("global-interstellar-routing", [
     {
-      src: placeholderPoster,
-      alt: "全球星间路由优化系统 项目海报占位图",
+      src: "assets/project-media/global-interstellar-routing/poster.jpg",
+      alt: "全球星间路由优化系统 项目海报",
       title: "项目海报",
       caption: "全球星间路由优化系统 项目海报",
-      description: "当前先用统一海报位承接项目主题，后续可替换成正式宣传海报。"
+      description: "项目海报先建立航天网络、图论优化和系统建模的整体印象。"
     },
     {
       src: "assets/project-media/global-interstellar-routing/scene-reference.jpg",
@@ -424,11 +427,11 @@
 
   setVisualFrames("economic-cycle-reconstruction", [
     {
-      src: placeholderPoster,
-      alt: "经济周期重构系统 项目海报占位图",
+      src: "assets/project-media/economic-cycle-reconstruction/poster.jpg",
+      alt: "经济周期重构系统 项目海报",
       title: "项目海报",
       caption: "经济周期重构系统 项目海报",
-      description: "当前先用统一海报位承接项目主题，后续可替换成正式宣传海报。"
+      description: "项目海报先说明这是应用数学、统计与经济建模交叉的系统型项目。"
     },
     {
       src: "assets/project-media/economic-cycle-reconstruction/scene-reference.jpg",
@@ -693,38 +696,6 @@
   }
 
   registerPlaceholderDetail(
-    "ai-future-player-starter",
-    "AI未来玩家启蒙计划",
-    "面向 5-8 年级学生的 AI 工具启蒙项目，重点是把 AI 作为学习和创意表达的助手来使用。",
-    [
-      { label: "这 5 天会做什么", value: "围绕 AI 工具认知、轻量化创意生成和基础交互，完成一个能展示的入门成果。" },
-      { label: "课程结束能看到什么", value: "软件原型 + 项目说明文档" },
-      { label: "更适合哪类学生", value: "对 AI 工具、创意表达和轻量项目感兴趣的初中低年级学生。" },
-      { label: "为什么值得学", value: "孩子会更早理解 AI 不是抽象概念，而是可以直接拿来做作品的工具。" }
-    ]
-  );
-  setVisualFrames("ai-future-player-starter", [
-    {
-      src: "assets/project-media/shared/project-placeholder.svg",
-      alt: "AI未来玩家启蒙计划 项目海报",
-      title: "项目海报",
-      caption: "AI未来玩家启蒙计划 项目海报"
-    },
-    {
-      src: "assets/project-media/ai-future-player-starter/scene-reference.jpg",
-      alt: "AI 工具启蒙课堂场景参考图",
-      title: "场景参考",
-      caption: "AI 工具启蒙课堂参考"
-    },
-    {
-      src: "assets/project-media/ai-future-player-starter/outcome-reference.png",
-      alt: "AI 工具生成成果参考图",
-      title: "成果参考",
-      caption: "AI 工具生成成果参考"
-    }
-  ]);
-
-  registerPlaceholderDetail(
     "single-leg-exoskeleton",
     "单腿机械外骨骼",
     "面向 9-11 年级学生的机械电子与生物医学项目，强调助力结构、控制逻辑和康复辅助场景。",
@@ -756,67 +727,4 @@
     }
   ]);
 
-  registerPlaceholderDetail(
-    "global-interstellar-routing",
-    "全球星间路由优化系统",
-    "面向 9-11 年级学生的纯软建模项目，关注卫星网络、图论优化与航天场景下的信息路由。",
-    [
-      { label: "这 5 天会做什么", value: "把星间通信抽象成网络优化问题，先理解路由再做模型表达。" },
-      { label: "课程结束能看到什么", value: "软件原型 + 项目说明文档" },
-      { label: "更适合哪类学生", value: "对航天、运筹优化、图论和系统建模感兴趣的学生。" },
-      { label: "为什么值得学", value: "它能帮助学生建立从真实问题到数学模型的完整思路。" }
-    ]
-  );
-  setVisualFrames("global-interstellar-routing", [
-    {
-      src: "assets/project-media/shared/project-placeholder.svg",
-      alt: "全球星间路由优化系统 项目海报",
-      title: "项目海报",
-      caption: "全球星间路由优化系统 项目海报"
-    },
-    {
-      src: "assets/project-media/global-interstellar-routing/scene-reference.jpg",
-      alt: "卫星通信与地面站场景参考图",
-      title: "场景参考",
-      caption: "卫星通信场景参考"
-    },
-    {
-      src: "assets/project-media/global-interstellar-routing/outcome-reference.svg",
-      alt: "星间路由网络结构参考图",
-      title: "成果参考",
-      caption: "星间路由网络成果参考"
-    }
-  ]);
-
-  registerPlaceholderDetail(
-    "economic-cycle-reconstruction",
-    "经济周期重构系统",
-    "面向 9-11 年级学生的纯软建模项目，关注经济周期、数据分析和模型重构。",
-    [
-      { label: "这 5 天会做什么", value: "通过宏观经济数据和图表，理解周期变化并尝试做出重构表达。" },
-      { label: "课程结束能看到什么", value: "软件原型 + 项目说明文档" },
-      { label: "更适合哪类学生", value: "对数学建模、经济分析和数据表达感兴趣的学生。" },
-      { label: "为什么值得学", value: "它能把数据、模型和现实经济问题连起来，适合作为进阶项目入口。" }
-    ]
-  );
-  setVisualFrames("economic-cycle-reconstruction", [
-    {
-      src: "assets/project-media/shared/project-placeholder.svg",
-      alt: "经济周期重构系统 项目海报",
-      title: "项目海报",
-      caption: "经济周期重构系统 项目海报"
-    },
-    {
-      src: "assets/project-media/economic-cycle-reconstruction/scene-reference.png",
-      alt: "经济分析与图表场景参考图",
-      title: "场景参考",
-      caption: "经济分析场景参考"
-    },
-    {
-      src: "assets/project-media/economic-cycle-reconstruction/outcome-reference.svg",
-      alt: "经济周期图示成果参考图",
-      title: "成果参考",
-      caption: "经济周期重构成果参考"
-    }
-  ]);
 })();
