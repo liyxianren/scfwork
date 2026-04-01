@@ -770,6 +770,10 @@ const PROJECT_SCHEDULES = {
   "economic-cycle-reconstruction": [
     { label: "一期", date: "6月22日-6月26日" },
     { label: "二期", date: "7月6日-7月10日" }
+  ],
+  "customer-churn-guardian": [
+    { label: "一期", date: "6月15日-6月19日" },
+    { label: "二期", date: "8月初" }
   ]
 };
 
@@ -845,6 +849,26 @@ const UPCOMING_PLACEHOLDER_PROJECTS = [
     focus: ["随机微分方程建模", "卡尔曼滤波与平滑估计", "经济周期可视化表达"],
     outcomes: ["完成经济周期重构系统", "理解不确定系统建模", "形成项目说明文档"],
     planPath: "标准计划书PDF/经济周期重构系统.pdf"
+  },
+  {
+    slug: "customer-churn-guardian",
+    name: "客脉守望者",
+    type: "纯软",
+    category: "系统建模",
+    subjects: ["计算机", "人工智能", "统计学", "经济/金融/商业"],
+    grade: "8-11",
+    direction: "机器学习商业分析",
+    seats: 1,
+    days: 5,
+    durationLabel: "30 小时",
+    durationMetaLabel: "课时",
+    requirement: "建议具备基础 Python 或数据分析兴趣，愿意同时理解业务问题与模型逻辑",
+    status: "计划书已上传",
+    summary: "面向咖啡馆等小型业态的客户流失预警系统项目，用多因子特征工程、随机森林和 Flask 可视化，把“谁可能流失”做成可执行的运营判断。",
+    intro: "项目从真实经营问题出发，把客户消费行为、互动记录和价值贡献组织成一套可预测、可解释、也可展示的机器学习系统，适合对数据科学、商业分析和 AI 落地感兴趣的学生。",
+    focus: ["RFM 与多因子特征工程", "随机森林建模与特征重要性分析", "Flask + ECharts 风险看板搭建"],
+    outcomes: ["完成可运行的客户流失预警系统", "输出高风险客户清单与运营建议", "形成模型评估结果与项目说明文档"],
+    planPath: "标准计划书PDF/客脉守望者.pdf"
   }
 ];
 

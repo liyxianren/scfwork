@@ -93,6 +93,14 @@
     `;
   }
 
+  function durationLabel(project) {
+    return project.durationLabel || `${project.days} 天`;
+  }
+
+  function durationMetaLabel(project) {
+    return project.durationMetaLabel || "天数";
+  }
+
   function renderProjects() {
     const filtered = getFilteredProjects();
     const hasFilter =
@@ -141,7 +149,7 @@
             ${scheduleBlock(project)}
             <div class="project-card__meta">
               <div><span>人数</span><strong>${project.seats} 人</strong></div>
-              <div><span>天数</span><strong>${project.days} 天</strong></div>
+              <div><span>${durationMetaLabel(project)}</span><strong>${durationLabel(project)}</strong></div>
               <div><span>基础要求</span><strong>${project.requirement}</strong></div>
             </div>
             <div class="project-card__actions">

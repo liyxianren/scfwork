@@ -100,6 +100,14 @@
       .join("");
   }
 
+  function durationLabel() {
+    return project.durationLabel || `${project.days} 天`;
+  }
+
+  function durationMetaLabel() {
+    return project.durationMetaLabel || "天数";
+  }
+
   const relatedHtml = relatedProjects.length
     ? relatedProjects
         .map(
@@ -618,7 +626,7 @@
               <span class="detail-chip">${project.type}</span>
               <span class="detail-chip">${project.grade} 年级</span>
               <span class="detail-chip">${project.direction}</span>
-              <span class="detail-chip">${project.days} 天</span>
+              <span class="detail-chip">${durationLabel()}</span>
             </div>
             <div class="chip-row chip-row--subjects" style="margin-top:14px;">
               ${(project.subjects || [])
@@ -678,8 +686,8 @@
                   <div class="meta-value">${project.seats} 人</div>
                 </div>
                 <div class="meta-item">
-                  <div class="meta-label">天数</div>
-                  <div class="meta-value">${project.days} 天</div>
+                  <div class="meta-label">${durationMetaLabel()}</div>
+                  <div class="meta-value">${durationLabel()}</div>
                 </div>
                 ${renderSessionMetaItems()}
                 <div class="meta-item">
@@ -783,7 +791,7 @@
             <span class="detail-chip">${project.type}</span>
             <span class="detail-chip">${project.grade} 年级</span>
             <span class="detail-chip">${project.direction}</span>
-            <span class="detail-chip">${project.days} 天</span>
+            <span class="detail-chip">${durationLabel()}</span>
           </div>
           <div class="chip-row chip-row--subjects" style="margin-top:14px;">
             ${(project.subjects || [])
@@ -849,8 +857,8 @@
                 <div class="meta-value">${project.seats} 人</div>
               </div>
               <div class="meta-item">
-                <div class="meta-label">天数</div>
-                <div class="meta-value">${project.days} 天</div>
+                <div class="meta-label">${durationMetaLabel()}</div>
+                <div class="meta-value">${durationLabel()}</div>
               </div>
               ${renderSessionMetaItems()}
               <div class="meta-item">
